@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="git," />
 
 
 
@@ -57,16 +57,19 @@
 
 
 
-<meta name="description" content="这是文刀三授的博客">
+<meta name="description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。
+分布式版本控制系统拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。在没有网络的情况下，客户端仍然能够正常的修改，提交代码。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git常见问题总结">
 <meta property="og:url" content="http://yoursite.com/2016/02/16/git常见问题总结/index.html">
 <meta property="og:site_name" content="文刀三授的博客">
-<meta property="og:description" content="这是文刀三授的博客">
-<meta property="og:updated_time" content="2016-02-16T03:17:26.178Z">
+<meta property="og:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。
+分布式版本控制系统拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。在没有网络的情况下，客户端仍然能够正常的修改，提交代码。">
+<meta property="og:updated_time" content="2016-02-17T06:03:51.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git常见问题总结">
-<meta name="twitter:description" content="这是文刀三授的博客">
+<meta name="twitter:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。
+分布式版本控制系统拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。在没有网络的情况下，客户端仍然能够正常的修改，提交代码。">
 
 
 
@@ -242,24 +245,56 @@
       
 
       
-        
+        <h2 id="git_u4ECB_u7ECD"><a href="#git_u4ECB_u7ECD" class="headerlink" title="git介绍"></a>git介绍</h2><p>git是一种分布式版本控制系统<em>（Distributed Version Control System，简称 DVCS）</em>，而SVN是非分布式版本控制系统。</p>
+<h3 id="u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF"><a href="#u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF" class="headerlink" title="分布式版本控制系统"></a>分布式版本控制系统</h3><p>拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。<br>在没有网络的情况下，客户端仍然能够正常的修改，提交代码。</p>
+<h3 id="u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF"><a href="#u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF" class="headerlink" title="集中式版本控制系统"></a>集中式版本控制系统</h3><p>也拥有一个单一的集中管理的服务器，保存所有文件的修订版本。协同工作的人需要通过客户端连接到服务器，取出最新的代码或者提交更新。<br>这样做的好处是可以一定程度的看到其他人在做什么。坏处是如果服务器宕机一个小时，这一个小时内任何人都不能够提交代码。</p>
+<h2 id="u521D_u6B21_u8FD0_u884Cgit_u914D_u7F6E"><a href="#u521D_u6B21_u8FD0_u884Cgit_u914D_u7F6E" class="headerlink" title="初次运行git配置"></a>初次运行git配置</h2><h3 id="u7528_u6237_u4FE1_u606F"><a href="#u7528_u6237_u4FE1_u606F" class="headerlink" title="用户信息"></a>用户信息</h3><h4 id="u914D_u7F6E"><a href="#u914D_u7F6E" class="headerlink" title="配置"></a>配置</h4><p>用户安装完成git后，第一件事就是配置你的用户名和邮箱地址。因为每次git提交都会使用这些信息。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"John Doe"</span></span><br><span class="line">$ git config --global user<span class="class">.email</span> <span class="string">"johndoe@example.com"</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="u68C0_u67E5_u914D_u7F6E"><a href="#u68C0_u67E5_u914D_u7F6E" class="headerlink" title="检查配置"></a>检查配置</h4><p>如果想要检查你的配置，可以使用 <code>git config --list</code> 命令来列出所有 Git 当时能找到的配置。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br><span class="line">user.name=John Doe</span><br><span class="line">user.email=johndoe@example<span class="class">.com</span></span><br><span class="line"><span class="attribute">color</span>.status=<span class="attribute">auto</span></span><br><span class="line"><span class="attribute">color</span>.branch=<span class="attribute">auto</span></span><br><span class="line"><span class="attribute">color</span>.interactive=<span class="attribute">auto</span></span><br><span class="line"><span class="attribute">color</span>.diff=<span class="attribute">auto</span></span><br></pre></td></tr></table></figure></p>
+<p>也可以通过<code>git config &lt;key&gt;</code>来查看某一项的配置<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config user<span class="class">.name</span></span><br><span class="line">John Doe</span><br></pre></td></tr></table></figure></p>
+<h2 id="u83B7_u53D6git_u4ED3_u5E93"><a href="#u83B7_u53D6git_u4ED3_u5E93" class="headerlink" title="获取git仓库"></a>获取git仓库</h2><p>克隆远程仓库 <code>git clone [url]</code>,例如：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/libgit2/libgit2</span><br></pre></td></tr></table></figure></p>
+<p>如果你想自定义本地仓库名称<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/libgit2/libgit2 myLibgit</span><br></pre></td></tr></table></figure></p>
+<p>上面clone操作是使用的https协议，也可以使用SSH协议来进行clone。不过使用SSH协议需要获取到本机的SSH key，然后将本机的SSH key的公钥添加到远程git上。</p>
+<h2 id="git_u5E38_u7528_u547D_u4EE4_u884C_u64CD_u4F5C"><a href="#git_u5E38_u7528_u547D_u4EE4_u884C_u64CD_u4F5C" class="headerlink" title="git常用命令行操作"></a>git常用命令行操作</h2><p>1.如何修改并提交代码<br>查看代码状态：<code>git status</code><br>查看状态简写方式：<code>git status -s</code><br>添加所有已修改代码到暂存区：<code>git add .</code><br>提交代码并且添加提交信息：<code>git commit -m &quot;first commit&quot;</code><br>推送代码到远程仓库：<code>git push origin master</code></p>
+<p>2.git提交时忽略文件<br>创建一个名为<code>.gitignore</code>的文件，列出要忽略的文件模式。<br>查看一个 .gitignore 文件的例子：<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># no .a files</span></span><br><span class="line">*.a</span><br><span class="line"></span><br><span class="line"><span class="comment"># but do track lib.a, even though you're ignoring .a files above</span></span><br><span class="line">!<span class="class"><span class="keyword">lib</span>.<span class="title">a</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment"># only ignore the TODO file in the current directory, not subdir/TODO</span></span><br><span class="line">/<span class="constant">TODO</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ignore all files in the build/ directory</span></span><br><span class="line">build/</span><br><span class="line"></span><br><span class="line"><span class="comment"># ignore doc/notes.txt, but not doc/server/arch.txt</span></span><br><span class="line">doc/*.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># ignore all .pdf files in the doc/ directory</span></span><br><span class="line">doc/**<span class="regexp">/*.pdf</span></span><br></pre></td></tr></table></figure></p>
+<p>3.撤销操作<br>重新提交：<code>git commit --amend</code><br>比如第一次提交忘记添加某个文件，需要再次提交：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="operator"><span class="keyword">commit</span> -<span class="keyword">m</span> <span class="string">'initial commit'</span></span><br><span class="line">$ git <span class="keyword">add</span> forgotten_file</span><br><span class="line">$ git <span class="keyword">commit</span> <span class="comment">--amend</span></span></span><br></pre></td></tr></table></figure></p>
+<p>取消暂存中的某一个文件：<code>git reset HEAD &lt;filename&gt;</code></p>
+<p>撤销对文件的任何修改：<code>git checkout -- &lt;filename&gt;</code><br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git checkout -- <span class="constant">CONTRIBUTING</span>.md</span><br><span class="line"><span class="variable">$ </span>git status</span><br></pre></td></tr></table></figure></p>
+<p>4.远程仓库操作<br>查看远程仓库：<code>git remote</code><br>你也可以指定选项 -v，会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL。<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote -v</span><br><span class="line">origin  <span class="symbol">https:</span>/<span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (push)</span></span><br></pre></td></tr></table></figure></p>
+<p>添加远程仓库：<code>git remote add &lt;shortname&gt; &lt;url&gt;</code><br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote</span><br><span class="line">origin</span><br><span class="line"><span class="variable">$ </span>git remote add pb <span class="symbol">https:</span>/<span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit</span><br><span class="line">$ git remote -v</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (push)</span><br><span class="line">pb  https:/</span><span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">pb  https:/</span><span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit (push)</span></span><br></pre></td></tr></table></figure></p>
+<p>5.打标签<br>列出已有标签:<code>git tag</code><br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">tag</span></span><br><span class="line"><span class="title">v0</span>.<span class="number">1</span></span><br><span class="line">v1.<span class="number">3</span></span><br></pre></td></tr></table></figure></p>
+<p>查看标签信息：<code>git show &lt;tag&gt;</code></p>
+<p>创建附注标签：<code>git tag -a &lt;v1.0&gt; -m &quot;my version 1.0&quot;</code></p>
+<p>创建轻量标签：<code>git tag &lt;v1.0&gt;</code></p>
+<p>后期打标签:<br>可以对过去的某一个提交打标签<br>先查看提交记录：<br><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=oneline</span><br><span class="line"><span class="number">15027957951</span>b64cf<span class="number">874c3557</span>a0f3547bd83b3ff6 Merge branch 'experiment'</span><br><span class="line">a<span class="number">6b4c97498</span>bd<span class="number">301d84096</span>da<span class="number">251c98a07c77</span>23e65 beginning write support</span><br><span class="line">0d52aaab<span class="number">4479697</span>da<span class="number">7686c15f77</span>a<span class="number">3d64d91651</span>90 one more thing</span><br><span class="line"><span class="number">6d52a271</span>eda<span class="number">8725415634</span>dd79daabbc<span class="number">4d9b6008</span>e Merge branch 'experiment'</span><br><span class="line"><span class="number">0b7434d86</span>859cc<span class="number">7b8c3d5</span>e1dddfed66ff742fcbc added a commit function</span><br><span class="line"><span class="number">4682c326105</span>7305bdd<span class="number">616e23b64</span>b<span class="number">0857d83262</span>7b added a todo file</span><br><span class="line">166ae<span class="number">0c4d3f42</span>0721acbb115cc33848dfcc2121a started write support</span><br><span class="line">9fceb02d0ae598e95dc<span class="number">970b74767</span>f<span class="number">19372d61</span>af8 updated rakefile</span><br><span class="line"><span class="number">964f16d36</span>dfccde844893cac<span class="number">5b347e7</span>b3d44abbc commit the todo</span><br><span class="line">8a5cbc<span class="number">430f1a9</span>c3d00faaeffd<span class="number">077985084229</span>08a updated readme</span><br></pre></td></tr></table></figure></p>
+<p>假设在<code>updated rakefile</code>这次提交忘记打标签，可以给这次提交打一个标签<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">tag</span> <span class="title">-a</span> v1.<span class="number">2</span> <span class="number">9</span>fceb02</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag">#git</a>
+          
+        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/03/underscore源码解析（一）/" rel="next" title="underscore源码解析（一）">
-                <i class="fa fa-chevron-left"></i> underscore源码解析（一）
+              <a href="/2016/02/01/markdown简明语法/" rel="next" title="markdown简明语法">
+                <i class="fa fa-chevron-left"></i> markdown简明语法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/17/underscore源码解析（一）/" rel="prev" title="underscore源码解析（一）">
+                underscore源码解析（一） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -337,7 +372,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -370,7 +405,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git_u4ECB_u7ECD"><span class="nav-number">1.</span> <span class="nav-text">git介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF"><span class="nav-number">1.1.</span> <span class="nav-text">分布式版本控制系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF"><span class="nav-number">1.2.</span> <span class="nav-text">集中式版本控制系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u521D_u6B21_u8FD0_u884Cgit_u914D_u7F6E"><span class="nav-number">2.</span> <span class="nav-text">初次运行git配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7528_u6237_u4FE1_u606F"><span class="nav-number">2.1.</span> <span class="nav-text">用户信息</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E"><span class="nav-number">2.1.1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u68C0_u67E5_u914D_u7F6E"><span class="nav-number">2.1.2.</span> <span class="nav-text">检查配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u83B7_u53D6git_u4ED3_u5E93"><span class="nav-number">3.</span> <span class="nav-text">获取git仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git_u5E38_u7528_u547D_u4EE4_u884C_u64CD_u4F5C"><span class="nav-number">4.</span> <span class="nav-text">git常用命令行操作</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
