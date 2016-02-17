@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。
-分布式版本控制系统拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。在没有网络的情况下，客户端仍然能够正常的修改，提交代码。">
+<meta name="description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git常见问题总结">
 <meta property="og:url" content="http://yoursite.com/2016/02/16/git常见问题总结/index.html">
 <meta property="og:site_name" content="文刀三授的博客">
-<meta property="og:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。
-分布式版本控制系统拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。在没有网络的情况下，客户端仍然能够正常的修改，提交代码。">
-<meta property="og:updated_time" content="2016-02-17T06:03:51.647Z">
+<meta property="og:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。">
+<meta property="og:updated_time" content="2016-02-17T07:33:42.875Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git常见问题总结">
-<meta name="twitter:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。
-分布式版本控制系统拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。在没有网络的情况下，客户端仍然能够正常的修改，提交代码。">
+<meta name="twitter:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。">
 
 
 
@@ -187,6 +184,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
       
       
@@ -248,6 +255,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/16/git常见问题总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/16/git常见问题总结/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -265,7 +279,7 @@
       
 
       
-        <h2 id="git_u4ECB_u7ECD"><a href="#git_u4ECB_u7ECD" class="headerlink" title="git介绍"></a>git介绍</h2><p>git是一种分布式版本控制系统<em>（Distributed Version Control System，简称 DVCS）</em>，而SVN是非分布式版本控制系统。</p>
+        <h2 id="git_u4ECB_u7ECD"><a href="#git_u4ECB_u7ECD" class="headerlink" title="git介绍"></a>git介绍</h2><p>git是一种分布式版本控制系统<em>（Distributed Version Control System，简称 DVCS）</em>，而SVN是非分布式版本控制系统。<br><a id="more"></a></p>
 <h3 id="u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF"><a href="#u5206_u5E03_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF" class="headerlink" title="分布式版本控制系统"></a>分布式版本控制系统</h3><p>拥有一个服务端的代码仓库，客户端每次clone都是将远程仓库的代码完整的镜像出来。这样一来，如果服务端的仓库发生故障，事后可以将任何一处镜像出来的本地仓库恢复。<br>在没有网络的情况下，客户端仍然能够正常的修改，提交代码。</p>
 <h3 id="u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF"><a href="#u96C6_u4E2D_u5F0F_u7248_u672C_u63A7_u5236_u7CFB_u7EDF" class="headerlink" title="集中式版本控制系统"></a>集中式版本控制系统</h3><p>也拥有一个单一的集中管理的服务器，保存所有文件的修订版本。协同工作的人需要通过客户端连接到服务器，取出最新的代码或者提交更新。<br>这样做的好处是可以一定程度的看到其他人在做什么。坏处是如果服务器宕机一个小时，这一个小时内任何人都不能够提交代码。</p>
 <h2 id="u521D_u6B21_u8FD0_u884Cgit_u914D_u7F6E"><a href="#u521D_u6B21_u8FD0_u884Cgit_u914D_u7F6E" class="headerlink" title="初次运行git配置"></a>初次运行git配置</h2><h3 id="u7528_u6237_u4FE1_u606F"><a href="#u7528_u6237_u4FE1_u606F" class="headerlink" title="用户信息"></a>用户信息</h3><h4 id="u914D_u7F6E"><a href="#u914D_u7F6E" class="headerlink" title="配置"></a>配置</h4><p>用户安装完成git后，第一件事就是配置你的用户名和邮箱地址。因为每次git提交都会使用这些信息。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"John Doe"</span></span><br><span class="line">$ git config --global user<span class="class">.email</span> <span class="string">"johndoe@example.com"</span></span><br></pre></td></tr></table></figure></p>
@@ -340,6 +354,10 @@
           
   <div class="comments" id="comments">
     
+      <div class="ds-thread" data-thread-key="2016/02/16/git常见问题总结/"
+           data-title="git常见问题总结" data-url="http://yoursite.com/2016/02/16/git常见问题总结/">
+      </div>
+    
   </div>
 
 
@@ -374,7 +392,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/default_avatar.jpg"
+               src="https://raw.githubusercontent.com/wendaosanshou/pic-repository/master/pic-avatar/default_avatar.jpg"
                alt="文刀三授" />
           <p class="site-author-name" itemprop="name">文刀三授</p>
           <p class="site-description motion-element" itemprop="description">这是文刀三授的博客</p>
@@ -382,7 +400,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -428,6 +446,13 @@
         
 
         <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://macshuo.com/" target="_blank">MacTalk</a>
+              </span>
+            
           
         </div>
 
@@ -702,9 +727,28 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"notes-iissnan"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 

@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));
-创建变量1234567891011121314151617181920212223242526272829// 将window对象赋给rootvar root = this;// 将windo">
+<meta name="description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));">
 <meta property="og:type" content="article">
 <meta property="og:title" content="underscore源码解析（一）">
 <meta property="og:url" content="http://yoursite.com/2016/02/17/underscore源码解析（一）/index.html">
 <meta property="og:site_name" content="文刀三授的博客">
-<meta property="og:description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));
-创建变量1234567891011121314151617181920212223242526272829// 将window对象赋给rootvar root = this;// 将windo">
-<meta property="og:updated_time" content="2016-02-17T06:19:09.120Z">
+<meta property="og:description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));">
+<meta property="og:updated_time" content="2016-02-17T07:32:22.436Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="underscore源码解析（一）">
-<meta name="twitter:description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));
-创建变量1234567891011121314151617181920212223242526272829// 将window对象赋给rootvar root = this;// 将windo">
+<meta name="twitter:description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));">
 
 
 
@@ -187,6 +184,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
       
       
@@ -248,6 +255,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/17/underscore源码解析（一）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/17/underscore源码解析（一）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -266,6 +280,7 @@
 
       
         <h2 id="u95ED_u5305"><a href="#u95ED_u5305" class="headerlink" title="闭包"></a>闭包</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//通过传入this来改变function的作用域，this对象是window对象。</span></span><br><span class="line"><span class="comment">//call用来改变一个方法的作用域</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;.call(<span class="keyword">this</span>));</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="u521B_u5EFA_u53D8_u91CF"><a href="#u521B_u5EFA_u53D8_u91CF" class="headerlink" title="创建变量"></a>创建变量</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 将window对象赋给root</span></span><br><span class="line"><span class="keyword">var</span> root = <span class="keyword">this</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将window._这个变量赋值给一个内部变量</span></span><br><span class="line"><span class="keyword">var</span> previousUnderscore = root._;</span><br><span class="line"></span><br><span class="line"><span class="comment">//将数组，对象和方法的原因赋值给临时变量，有利于压缩代码。</span></span><br><span class="line"><span class="comment">//Array.prototype是js的原生方法，不能被压缩，但是赋值给ArrayProto后就能够将ArrayProto进行压缩</span></span><br><span class="line"><span class="keyword">var</span> ArrayProto = <span class="built_in">Array</span>.prototype, ObjProto = <span class="built_in">Object</span>.prototype, FuncProto = <span class="built_in">Function</span>.prototype;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建一些快速查询的变量用来快速获取一些原形库</span></span><br><span class="line"><span class="comment">// push用来给数组添加元素</span></span><br><span class="line"><span class="comment">// slice用来浅复制数组，参数(start , end)来判断赋值数组的位置</span></span><br><span class="line"><span class="comment">// toString方法可以用来检测对象类型，toString.call(new String())返回[object String]</span></span><br><span class="line"><span class="comment">// hasOwnProperty方法可以判断当前对象是否拥有该属性，如果是该对象原形拥有的属性，hasOwnProperty判断会返回false</span></span><br><span class="line"><span class="keyword">var</span></span><br><span class="line">  push             = ArrayProto.push,</span><br><span class="line">  slice            = ArrayProto.slice,</span><br><span class="line">  toString         = ObjProto.toString,</span><br><span class="line">  hasOwnProperty   = ObjProto.hasOwnProperty;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将一些原生方法赋值给变量让我们可以快速使用这些原生方法。</span></span><br><span class="line"><span class="comment">// Array.isArray判断是否为数组，Object.keys(obj)返回obj的key为元素的数组，bind方法用来绑定function的作用域，和call类型，</span></span><br><span class="line"><span class="comment">// create方法用来创建一个对象，传入参数可以是一个对象的原形，比如Object.create(person.prototype)，创建的对象可以继承person的原形</span></span><br><span class="line"><span class="keyword">var</span></span><br><span class="line">  nativeIsArray      = <span class="built_in">Array</span>.isArray,</span><br><span class="line">  nativeKeys         = <span class="built_in">Object</span>.keys,</span><br><span class="line">  nativeBind         = FuncProto.bind,</span><br><span class="line">  nativeCreate       = <span class="built_in">Object</span>.create;</span><br></pre></td></tr></table></figure>
 <h2 id="u5BFC_u51FAunderscore_u5BF9_u8C61"><a href="#u5BFC_u51FAunderscore_u5BF9_u8C61" class="headerlink" title="导出underscore对象"></a>导出underscore对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 大概是给_变量赋值成为一个对象。然后同时将给对象也赋给this._wrapped</span></span><br><span class="line"><span class="keyword">var</span> _ = <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (obj <span class="keyword">instanceof</span> _) <span class="keyword">return</span> obj;</span><br><span class="line">  <span class="keyword">if</span> (!(<span class="keyword">this</span> <span class="keyword">instanceof</span> _)) <span class="keyword">return</span> <span class="keyword">new</span> _(obj);</span><br><span class="line">  <span class="keyword">this</span>._wrapped = obj;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断如果是nodejs环境，通过moduler.exports导出_对象</span></span><br><span class="line"><span class="comment">// 如果是前端环境，不存在exports对象，则将_对象赋值给全局window对象</span></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">typeof</span> exports !== <span class="string">'undefined'</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">module</span> !== <span class="string">'undefined'</span> &amp;&amp; <span class="built_in">module</span>.exports) &#123;</span><br><span class="line">    exports = <span class="built_in">module</span>.exports = _;</span><br><span class="line">  &#125;</span><br><span class="line">  exports._ = _;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  root._ = _;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="u5185_u90E8_u65B9_u6CD5"><a href="#u5185_u90E8_u65B9_u6CD5" class="headerlink" title="内部方法"></a>内部方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 给_对象附加一个version版本变量</span></span><br><span class="line">_.VERSION = <span class="string">'1.8.2'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 用来执行函数并绑定函数的作用域</span></span><br><span class="line"><span class="comment">// 一般用来优化回调函数，将func传进optimizeCb后，会返回一个func01,func01方法传入的参数都会被传到func中</span></span><br><span class="line"><span class="keyword">var</span> optimizeCb = <span class="function"><span class="keyword">function</span>(<span class="params">func, context, argCount</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (context === <span class="keyword">void</span> <span class="number">0</span>) <span class="keyword">return</span> func;<span class="comment">//context === void 0判断context是否为undefined</span></span><br><span class="line">  <span class="keyword">switch</span> (argCount == <span class="literal">null</span> ? <span class="number">3</span> : argCount) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>: <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;<span class="comment">//返回一个function,里面的参数传入回调函数func中</span></span><br><span class="line">      <span class="keyword">return</span> func.call(context, value);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>: <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">value, other</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> func.call(context, value, other);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>: <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">value, index, collection</span>) </span>&#123;<span class="comment">//比如在each方法中，回调函数会传入value,index和list</span></span><br><span class="line">      <span class="keyword">return</span> func.call(context, value, index, collection);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span>: <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">accumulator, value, index, collection</span>) </span>&#123;<span class="comment">//比如在reduce方法中，回调函数可能会传一个初始值mome</span></span><br><span class="line">      <span class="keyword">return</span> func.call(context, accumulator, value, index, collection);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> func.apply(context, <span class="built_in">arguments</span>);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 内部函数，用来判断参数类型，默认通过_.property()返回一个获取对象属性的函数,</span></span><br><span class="line"><span class="comment">// 如果参数是方法则返回优化回调函数的方法</span></span><br><span class="line"><span class="comment">// 参数是对象则返回一个判断对象是否相等的方法;返回方法后再次传入一个参数，判断传入对象是否相同</span></span><br><span class="line"><span class="keyword">var</span> cb = <span class="function"><span class="keyword">function</span>(<span class="params">value, context, argCount</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (value == <span class="literal">null</span>) <span class="keyword">return</span> _.identity;</span><br><span class="line">  <span class="keyword">if</span> (_.isFunction(value)) <span class="keyword">return</span> optimizeCb(value, context, argCount);</span><br><span class="line">  <span class="keyword">if</span> (_.isObject(value)) <span class="keyword">return</span> _.matcher(value);</span><br><span class="line">  <span class="keyword">return</span> _.property(value);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 传入参数无限大的cb()方法</span></span><br><span class="line">_.iteratee = <span class="function"><span class="keyword">function</span>(<span class="params">value, context</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> cb(value, context, <span class="literal">Infinity</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
@@ -323,6 +338,10 @@
           
   <div class="comments" id="comments">
     
+      <div class="ds-thread" data-thread-key="2016/02/17/underscore源码解析（一）/"
+           data-title="underscore源码解析（一）" data-url="http://yoursite.com/2016/02/17/underscore源码解析（一）/">
+      </div>
+    
   </div>
 
 
@@ -357,7 +376,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/default_avatar.jpg"
+               src="https://raw.githubusercontent.com/wendaosanshou/pic-repository/master/pic-avatar/default_avatar.jpg"
                alt="文刀三授" />
           <p class="site-author-name" itemprop="name">文刀三授</p>
           <p class="site-description motion-element" itemprop="description">这是文刀三授的博客</p>
@@ -365,7 +384,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -411,6 +430,13 @@
         
 
         <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://macshuo.com/" target="_blank">MacTalk</a>
+              </span>
+            
           
         </div>
 
@@ -685,9 +711,28 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"notes-iissnan"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 
