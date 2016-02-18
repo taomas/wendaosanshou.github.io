@@ -63,7 +63,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/02/16/git常见问题总结/index.html">
 <meta property="og:site_name" content="文刀三授的博客">
 <meta property="og:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。">
-<meta property="og:updated_time" content="2016-02-17T07:33:42.875Z">
+<meta property="og:updated_time" content="2016-02-18T00:59:16.563Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git常见问题总结">
 <meta name="twitter:description" content="git介绍git是一种分布式版本控制系统（Distributed Version Control System，简称 DVCS），而SVN是非分布式版本控制系统。">
@@ -255,13 +255,6 @@
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/16/git常见问题总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/16/git常见问题总结/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -294,7 +287,7 @@
 <p>取消暂存中的某一个文件：<code>git reset HEAD &lt;filename&gt;</code></p>
 <p>撤销对文件的任何修改：<code>git checkout -- &lt;filename&gt;</code><br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git checkout -- <span class="constant">CONTRIBUTING</span>.md</span><br><span class="line"><span class="variable">$ </span>git status</span><br></pre></td></tr></table></figure></p>
 <p>4.远程仓库操作<br>查看远程仓库：<code>git remote</code><br>你也可以指定选项 -v，会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL。<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote -v</span><br><span class="line">origin  <span class="symbol">https:</span>/<span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (push)</span></span><br></pre></td></tr></table></figure></p>
-<p>添加远程仓库：<code>git remote add &lt;shortname&gt; &lt;url&gt;</code><br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote</span><br><span class="line">origin</span><br><span class="line"><span class="variable">$ </span>git remote add pb <span class="symbol">https:</span>/<span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit</span><br><span class="line">$ git remote -v</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (push)</span><br><span class="line">pb  https:/</span><span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">pb  https:/</span><span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit (push)</span></span><br></pre></td></tr></table></figure></p>
+<p>添加远程仓库：<code>git remote add origin &lt;url&gt;</code><br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote</span><br><span class="line">origin</span><br><span class="line"><span class="variable">$ </span>git remote add pb <span class="symbol">https:</span>/<span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit</span><br><span class="line">$ git remote -v</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">origin  https:/</span><span class="regexp">/github.com/schacon</span><span class="regexp">/ticgit (push)</span><br><span class="line">pb  https:/</span><span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit (fetch)</span><br><span class="line">pb  https:/</span><span class="regexp">/github.com/paulboone</span><span class="regexp">/ticgit (push)</span></span><br></pre></td></tr></table></figure></p>
 <p>5.打标签<br>列出已有标签:<code>git tag</code><br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">tag</span></span><br><span class="line"><span class="title">v0</span>.<span class="number">1</span></span><br><span class="line">v1.<span class="number">3</span></span><br></pre></td></tr></table></figure></p>
 <p>查看标签信息：<code>git show &lt;tag&gt;</code></p>
 <p>创建附注标签：<code>git tag -a &lt;v1.0&gt; -m &quot;my version 1.0&quot;</code></p>
@@ -354,10 +347,6 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/16/git常见问题总结/"
-           data-title="git常见问题总结" data-url="http://yoursite.com/2016/02/16/git常见问题总结/">
-      </div>
-    
   </div>
 
 
@@ -400,7 +389,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -410,7 +399,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -727,28 +716,9 @@
 
   
 
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"notes-iissnan"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-  
 
 
+  
 
 
 
