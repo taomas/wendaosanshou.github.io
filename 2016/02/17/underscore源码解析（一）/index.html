@@ -63,7 +63,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/02/17/underscore源码解析（一）/index.html">
 <meta property="og:site_name" content="文刀三授的博客">
 <meta property="og:description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));">
-<meta property="og:updated_time" content="2016-02-19T09:24:32.925Z">
+<meta property="og:updated_time" content="2016-02-19T09:28:25.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="underscore源码解析（一）">
 <meta name="twitter:description" content="闭包12345//通过传入this来改变function的作用域，this对象是window对象。//call用来改变一个方法的作用域(function()&amp;#123;&amp;#125;.call(this));">
@@ -91,6 +91,15 @@
 
   
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-74126376-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -255,6 +264,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/17/underscore源码解析（一）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/17/underscore源码解析（一）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -288,7 +304,7 @@
 <h3 id="reject"><a href="#reject" class="headerlink" title="reject"></a>reject</h3><p><em>_.reject(list, predicate, [context])</em><br>返回list中没有通过predicate真值检测的元素集合，与filter相反。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 遍历obj,返回所有没通过predicate真值检测的元素组成的数组</span></span><br><span class="line">_.reject = <span class="function"><span class="keyword">function</span>(<span class="params">obj, predicate, context</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> _.filter(obj, _.negate(cb(predicate), context));</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//=============================_.negate(predicate)===================</span></span><br><span class="line">_.negate = <span class="function"><span class="keyword">function</span>(<span class="params">predicate</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> !predicate.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);<span class="comment">//返回predicate函数返回的相反值</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <h3 id="every"><a href="#every" class="headerlink" title="every"></a>every</h3><p><em>_.every(list, predicate, [context])</em><br>如果list的所有元素都通过了predicate真值检测，就返回true<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">_.every = _.all = <span class="function"><span class="keyword">function</span>(<span class="params">obj, predicate, context</span>) </span>&#123;</span><br><span class="line">  predicate = cb(predicate, context);<span class="comment">//给检测函数predicate绑定作用域</span></span><br><span class="line">  <span class="keyword">var</span> keys = !isArrayLike(obj) &amp;&amp; _.keys(obj),<span class="comment">//obj是数组返回false，否则返回对象obj元素的键组成的数组</span></span><br><span class="line">      length = (keys || obj).length;<span class="comment">//对象或者数组的长度</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> index = <span class="number">0</span>; index &lt; length; index++) &#123;</span><br><span class="line">    <span class="keyword">var</span> currentKey = keys ? keys[index] : index;<span class="comment">//如果是对象，则通过索引index查找keys中的key</span></span><br><span class="line">    <span class="keyword">if</span> (!predicate(obj[currentKey], currentKey, obj)) <span class="keyword">return</span> <span class="literal">false</span>;<span class="comment">//只要有一个元素未通过检测函数predicate，返回false</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <h3 id="some"><a href="#some" class="headerlink" title="some"></a>some</h3><p><em>_.some(list, [predicate], [context])</em><br>如果list中有通过predicate真值检测的元素，函数中断，返回true，否则返回false<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">_.some = _.any = <span class="function"><span class="keyword">function</span>(<span class="params">obj, predicate, context</span>) </span>&#123;</span><br><span class="line">  predicate = cb(predicate, context);</span><br><span class="line">  <span class="keyword">var</span> keys = !isArrayLike(obj) &amp;&amp; _.keys(obj),</span><br><span class="line">      length = (keys || obj).length;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> index = <span class="number">0</span>; index &lt; length; index++) &#123;</span><br><span class="line">    <span class="keyword">var</span> currentKey = keys ? keys[index] : index;</span><br><span class="line">    <span class="keyword">if</span> (predicate(obj[currentKey], currentKey, obj)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<h2 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h2><p>underscore的源码写的非常简洁，可读性非常好，但是后面的api方法实在是太多了。就不再一一列举了。</p>
+<h2 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h2><p>underscore的源码写的非常简洁，可读性非常好，但是后面的api方法实在是太多了。就不再一一列举了。<br>后面自己准备按照underscore的api文档，自己实现一个阉割版的underscore库，不求能够支持项目使用，完全是自己用来练手，提高自己的代码简洁性和可读性。</p>
 
       
     </div>
@@ -335,6 +351,10 @@
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/02/17/underscore源码解析（一）/"
+           data-title="underscore源码解析（一）" data-url="http://yoursite.com/2016/02/17/underscore源码解析（一）/">
+      </div>
     
   </div>
 
@@ -383,6 +403,13 @@
             </a>
           </div>
           
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -705,9 +732,28 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wendaosanshou"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 
