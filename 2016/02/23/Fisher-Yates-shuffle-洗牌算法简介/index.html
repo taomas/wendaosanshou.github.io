@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="测试文章," />
+  <meta name="keywords" content="js算法," />
 
 
 
@@ -57,43 +57,17 @@
 
 
 
-<meta name="description" content="如何使用简单的markdown语法01.测试链接这是一个百度链接！我们先来测试一下这个链接是否是ok的。
-02.然后测试列表功能
-
-列表01
-列表02
-列表03
-列表04
-
-
-03.如何写javascript1234var a = 100,    b = 200;var c = a + b;cosole.log(a);">
+<meta name="description" content="今天在学习underscore源码的过程中，看到了一个shuffle的api。api的具体功能是将一个list随机打乱后返回一个打乱后的list。里面有用到随机乱序的算法，叫做Fisher-Yates shuffle。由于自己也不是太清楚如何随机打乱一个数组或者类数组对象，于是简单的了解了一番。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试文章功能">
-<meta property="og:url" content="http://yoursite.com/2016/02/01/测试文章功能/index.html">
+<meta property="og:title" content="Fisher-Yates shuffle 洗牌算法简介">
+<meta property="og:url" content="http://yoursite.com/2016/02/23/Fisher-Yates-shuffle-洗牌算法简介/index.html">
 <meta property="og:site_name" content="文刀三授的博客">
-<meta property="og:description" content="如何使用简单的markdown语法01.测试链接这是一个百度链接！我们先来测试一下这个链接是否是ok的。
-02.然后测试列表功能
-
-列表01
-列表02
-列表03
-列表04
-
-
-03.如何写javascript1234var a = 100,    b = 200;var c = a + b;cosole.log(a);">
-<meta property="og:updated_time" content="2016-02-17T07:32:53.291Z">
+<meta property="og:description" content="今天在学习underscore源码的过程中，看到了一个shuffle的api。api的具体功能是将一个list随机打乱后返回一个打乱后的list。里面有用到随机乱序的算法，叫做Fisher-Yates shuffle。由于自己也不是太清楚如何随机打乱一个数组或者类数组对象，于是简单的了解了一番。">
+<meta property="og:image" content="https://raw.githubusercontent.com/wendaosanshou/pic-repository/master/QUnit/qunit-shuffle.png">
+<meta property="og:updated_time" content="2016-02-23T10:07:00.137Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试文章功能">
-<meta name="twitter:description" content="如何使用简单的markdown语法01.测试链接这是一个百度链接！我们先来测试一下这个链接是否是ok的。
-02.然后测试列表功能
-
-列表01
-列表02
-列表03
-列表04
-
-
-03.如何写javascript1234var a = 100,    b = 200;var c = a + b;cosole.log(a);">
+<meta name="twitter:title" content="Fisher-Yates shuffle 洗牌算法简介">
+<meta name="twitter:description" content="今天在学习underscore源码的过程中，看到了一个shuffle的api。api的具体功能是将一个list随机打乱后返回一个打乱后的list。里面有用到随机乱序的算法，叫做Fisher-Yates shuffle。由于自己也不是太清楚如何随机打乱一个数组或者类数组对象，于是简单的了解了一番。">
 
 
 
@@ -111,7 +85,7 @@
   };
 </script>
 
-  <title> 测试文章功能 | 文刀三授的博客 </title>
+  <title> Fisher-Yates shuffle 洗牌算法简介 | 文刀三授的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -270,7 +244,7 @@
             
             
               
-                测试文章功能
+                Fisher-Yates shuffle 洗牌算法简介
               
             
           </h1>
@@ -282,8 +256,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-01T13:26:50+08:00" content="2016-02-01">
-              2016-02-01
+            <time itemprop="dateCreated" datetime="2016-02-23T16:49:13+08:00" content="2016-02-23">
+              2016-02-23
             </time>
           </span>
 
@@ -293,8 +267,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/01/测试文章功能/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/01/测试文章功能/" itemprop="commentsCount"></span>
+                <a href="/2016/02/23/Fisher-Yates-shuffle-洗牌算法简介/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/23/Fisher-Yates-shuffle-洗牌算法简介/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -315,45 +289,23 @@
       
 
       
-        <h1 id="u5982_u4F55_u4F7F_u7528_u7B80_u5355_u7684markdown_u8BED_u6CD5"><a href="#u5982_u4F55_u4F7F_u7528_u7B80_u5355_u7684markdown_u8BED_u6CD5" class="headerlink" title="如何使用简单的markdown语法"></a>如何使用简单的markdown语法</h1><h2 id="01-_u6D4B_u8BD5_u94FE_u63A5"><a href="#01-_u6D4B_u8BD5_u94FE_u63A5" class="headerlink" title="01.测试链接"></a>01.测试链接</h2><h2 id="u8FD9_u662F_u4E00_u4E2A_u767E_u5EA6_u94FE_u63A5_uFF01"><a href="#u8FD9_u662F_u4E00_u4E2A_u767E_u5EA6_u94FE_u63A5_uFF01" class="headerlink" title="这是一个百度链接！"></a>这是一个百度<a href="http://www.baidu.com" target="_blank" rel="external">链接</a>！</h2><p>我们先来测试一下这个链接是否是ok的。</p>
-<h2 id="02-_u7136_u540E_u6D4B_u8BD5_u5217_u8868_u529F_u80FD"><a href="#02-_u7136_u540E_u6D4B_u8BD5_u5217_u8868_u529F_u80FD" class="headerlink" title="02.然后测试列表功能"></a>02.然后测试列表功能</h2><blockquote>
-<ul>
-<li>列表01</li>
-<li>列表02</li>
-<li>列表03</li>
-<li>列表04</li>
-</ul>
-</blockquote>
-<h2 id="03-_u5982_u4F55_u5199javascript"><a href="#03-_u5982_u4F55_u5199javascript" class="headerlink" title="03.如何写javascript"></a>03.如何写javascript</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">100</span>,</span><br><span class="line">    b = <span class="number">200</span>;</span><br><span class="line"><span class="keyword">var</span> c = a + b;</span><br><span class="line">cosole.log(a);</span><br></pre></td></tr></table></figure>
+        <p>今天在学习underscore源码的过程中，看到了一个<a href="http://www.css88.com/doc/underscore/#shuffle" target="_blank" rel="external">shuffle</a>的api。<br>api的具体功能是将一个list随机打乱后返回一个打乱后的list。里面有用到随机乱序的算法，叫做Fisher-Yates shuffle。<br>由于自己也不是太清楚如何随机打乱一个数组或者类数组对象，于是简单的了解了一番。</p>
 <a id="more"></a>
-<h2 id="04-_u5982_u4F55_u5199html"><a href="#04-_u5982_u4F55_u5199html" class="headerlink" title="04.如何写html"></a>04.如何写html</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="05-_u5982_u4F55_u5199css"><a href="#05-_u5982_u4F55_u5199css" class="headerlink" title="05.如何写css"></a>05.如何写css</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.demo</span><span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="function">url</span>(<span class="string">'../img/demo.png'</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<h1 id="u5982_u4F55_u4F7F_u7528_u7B80_u5355_u7684markdown_u8BED_u6CD5-1"><a href="#u5982_u4F55_u4F7F_u7528_u7B80_u5355_u7684markdown_u8BED_u6CD5-1" class="headerlink" title="如何使用简单的markdown语法"></a>如何使用简单的markdown语法</h1><h2 id="01-_u7ED8_u5236_u8868_u683C"><a href="#01-_u7ED8_u5236_u8868_u683C" class="headerlink" title="01.绘制表格"></a>01.绘制表格</h2><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>价格</th>
-<th style="text-align:center">数量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>计算机</td>
-<td>$1600</td>
-<td style="text-align:center">5</td>
-</tr>
-<tr>
-<td>手机</td>
-<td>$1000</td>
-<td style="text-align:center">4</td>
-</tr>
-<tr>
-<td>电脑</td>
-<td>$5000</td>
-<td style="text-align:center">3</td>
-</tr>
-</tbody>
-</table>
+<h2 id="underscore_u6E90_u7801_u5B9E_u73B0"><a href="#underscore_u6E90_u7801_u5B9E_u73B0" class="headerlink" title="underscore源码实现"></a>underscore源码实现</h2><p>在underscore的1.8.2版本中，shuffle方法是直接实现的而没有提取到sample方法中，大概逻辑就是：<br>1.如果传入obj是数组，直接赋值给set,如果是对象，将对象的value组成的数组赋值给set。<br>2.定义length和length长度的数组shuffle。<br>3.for循环，获取0-i的随机索引rand，将shuffle[rand]赋值给shuffle[index],将set[index]赋值给shuffle[rand];</p>
+<p>源码实现：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">_.shuffle = <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> set = isArrayLike(obj) ? obj : _.values(obj);</span><br><span class="line">  <span class="keyword">var</span> length = set.length;</span><br><span class="line">  <span class="keyword">var</span> shuffled = <span class="built_in">Array</span>(length);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> index = <span class="number">0</span>, rand; index &lt; length; index++) &#123;</span><br><span class="line">    rand = _.random(<span class="number">0</span>, index);</span><br><span class="line">    <span class="keyword">if</span> (rand !== index) shuffled[index] = shuffled[rand];</span><br><span class="line">    shuffled[rand] = set[index];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> shuffled;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>其中最精粹的地方应该就是shuffled[index]和shuffled[rand]的交换过程了。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (rand !== index) shuffled[index] = shuffled[rand];</span><br><span class="line">shuffled[rand] = set[index];</span><br></pre></td></tr></table></figure></p>
+<p>这里面具体的交换流程我感觉有点晕，我也没太弄懂，只记得就是这个交换的。希望以后有机会能弄清楚。</p>
+<h2 id="stackoverflow_u7684_u5B9E_u73B0"><a href="#stackoverflow_u7684_u5B9E_u73B0" class="headerlink" title="stackoverflow的实现"></a>stackoverflow的实现</h2><p>后来在stackoverflow里面也看到的随机乱序的算法：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shuffle</span>(<span class="params">array</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> rand, index = -<span class="number">1</span>,</span><br><span class="line">    length = array.length,</span><br><span class="line">    result = <span class="built_in">Array</span>(length);</span><br><span class="line">  <span class="keyword">while</span> (++index &lt; length) &#123;</span><br><span class="line">    rand = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (index + <span class="number">1</span>));</span><br><span class="line">    result[index] = result[rand];</span><br><span class="line">    result[rand] = array[index];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>原理大概都相同，不过发现这里没有判断<code>if (rand !== index)</code>,后来通过多次的测试证实，确实不需要<code>if (rand !== index)</code>这处判断。</p>
+<h2 id="u81EA_u5DF1_u7684my-underscore_u5B9E_u73B0"><a href="#u81EA_u5DF1_u7684my-underscore_u5B9E_u73B0" class="headerlink" title="自己的my-underscore实现"></a>自己的my-underscore实现</h2><p>后面因为自己最近在模仿underscore，想要重新造轮子实现大部分的underscore的api，所以也只是尝试了去除<code>if (rand !== index)</code>这处判断，<br>其他的地方和undersore的1.8.2版本的没太大区别。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">_.shuffle = <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> set = !_.isArrayLike(obj) ? _.values(obj) : obj,</span><br><span class="line">     len = set.length,</span><br><span class="line">     shuffle = <span class="built_in">Array</span>(len);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, rand; i &lt; len; i++) &#123;</span><br><span class="line">     rand = _.random(<span class="number">0</span>, i);</span><br><span class="line">     shuffle[i] = shuffle[rand];</span><br><span class="line">     shuffle[rand] = set[i];</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> shuffle;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>但是问题来了，自己这样做会不会出现什么问题呢？会不会有bug呢？后面自己试了一下QUnit测试。</p>
+<h2 id="QUnit_u5355_u5143_u6D4B_u8BD5"><a href="#QUnit_u5355_u5143_u6D4B_u8BD5" class="headerlink" title="QUnit单元测试"></a>QUnit单元测试</h2><p>在学习underscore的过程中，无意间在github的underscore项目中发现了里面有用到QUnit测试。于是自己再实现my-underscore项目的同时，也用到了QUnit测试。<br>将underscore的单元测试代码拷贝过来，log部分翻译成中文。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">QUnit.test(<span class="string">'shuffle'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">assert</span>) </span>&#123;</span><br><span class="line">  assert.deepEqual(_.shuffle([<span class="number">1</span>]), [<span class="number">1</span>], <span class="string">'正确返回[1]'</span>);</span><br><span class="line">  <span class="keyword">var</span> numbers = _.range(<span class="number">20</span>);</span><br><span class="line">  <span class="keyword">var</span> shuffled = _.shuffle(numbers);</span><br><span class="line">  assert.notDeepEqual(numbers, shuffled, <span class="string">'乱序了number的元素'</span>); <span class="comment">// Chance of false negative: 1 in ~2.4*10^18</span></span><br><span class="line">  assert.notStrictEqual(numbers, shuffled, <span class="string">'原对象是未被修改的'</span>);</span><br><span class="line">  assert.deepEqual(numbers, _.sortBy(shuffled, <span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">  &#125;), <span class="string">'乱序前和乱序后是相同的元素'</span>);</span><br><span class="line"></span><br><span class="line">  shuffled = _.shuffle(&#123;a: <span class="number">1</span>, b: <span class="number">2</span>, c: <span class="number">3</span>, d: <span class="number">4</span>&#125;);</span><br><span class="line">  assert.equal(shuffled.length, <span class="number">4</span>);</span><br><span class="line">  assert.deepEqual(shuffled.sort(), [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], <span class="string">'也可以对对象进行乱序'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>这里<code>_.sortBy</code>部分之前有报错，后来发现自己实现的sortBy需要有一个回调返回用来排序的值。于是在<code>_.sortBy</code>里面增加了回调方法。<br>单元测试后的结果：<br><img src="https://raw.githubusercontent.com/wendaosanshou/pic-repository/master/QUnit/qunit-shuffle.png" alt="QUnit-shuffle"><br>哈哈，完美通过单元测试。</p>
+<h2 id="u603B_u7ED3"><a href="#u603B_u7ED3" class="headerlink" title="总结"></a>总结</h2><p>Fisher-Yates shuffle应该算是一个非常典型的乱序算法，这里写一篇blog不算是怎么深入，仅仅只是简介一下该乱序算法。<br>QUnit也是一个非常不错的测试框架，以后做任何项目，都可以通过QUnit进行单元测试。</p>
+<hr>
+<blockquote>
+<p>作者：文刀三授<br>博客：<a href="http://wendaosanshou.github.io/" target="_blank" rel="external">http://wendaosanshou.github.io/</a></p>
+</blockquote>
 
       
     </div>
@@ -362,7 +314,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/测试文章/" rel="tag">#测试文章</a>
+            <a href="/tags/js算法/" rel="tag">#js算法</a>
           
         </div>
       
@@ -371,13 +323,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/02/18/前端代码指南/" rel="next" title="前端代码指南">
+                <i class="fa fa-chevron-left"></i> 前端代码指南
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/02/01/markdown简明语法/" rel="prev" title="markdown简明语法">
-                markdown简明语法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -403,8 +355,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/01/测试文章功能/"
-           data-title="测试文章功能" data-url="http://yoursite.com/2016/02/01/测试文章功能/">
+      <div class="ds-thread" data-thread-key="2016/02/23/Fisher-Yates-shuffle-洗牌算法简介/"
+           data-title="Fisher-Yates shuffle 洗牌算法简介" data-url="http://yoursite.com/2016/02/23/Fisher-Yates-shuffle-洗牌算法简介/">
       </div>
     
   </div>
@@ -524,7 +476,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u5982_u4F55_u4F7F_u7528_u7B80_u5355_u7684markdown_u8BED_u6CD5"><span class="nav-number">1.</span> <span class="nav-text">如何使用简单的markdown语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#01-_u6D4B_u8BD5_u94FE_u63A5"><span class="nav-number">1.1.</span> <span class="nav-text">01.测试链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u8FD9_u662F_u4E00_u4E2A_u767E_u5EA6_u94FE_u63A5_uFF01"><span class="nav-number">1.2.</span> <span class="nav-text">这是一个百度链接！</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#02-_u7136_u540E_u6D4B_u8BD5_u5217_u8868_u529F_u80FD"><span class="nav-number">1.3.</span> <span class="nav-text">02.然后测试列表功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#03-_u5982_u4F55_u5199javascript"><span class="nav-number">1.4.</span> <span class="nav-text">03.如何写javascript</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#04-_u5982_u4F55_u5199html"><span class="nav-number">1.5.</span> <span class="nav-text">04.如何写html</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#05-_u5982_u4F55_u5199css"><span class="nav-number">1.6.</span> <span class="nav-text">05.如何写css</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u5982_u4F55_u4F7F_u7528_u7B80_u5355_u7684markdown_u8BED_u6CD5-1"><span class="nav-number">2.</span> <span class="nav-text">如何使用简单的markdown语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#01-_u7ED8_u5236_u8868_u683C"><span class="nav-number">2.1.</span> <span class="nav-text">01.绘制表格</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#underscore_u6E90_u7801_u5B9E_u73B0"><span class="nav-number">1.</span> <span class="nav-text">underscore源码实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stackoverflow_u7684_u5B9E_u73B0"><span class="nav-number">2.</span> <span class="nav-text">stackoverflow的实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u81EA_u5DF1_u7684my-underscore_u5B9E_u73B0"><span class="nav-number">3.</span> <span class="nav-text">自己的my-underscore实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QUnit_u5355_u5143_u6D4B_u8BD5"><span class="nav-number">4.</span> <span class="nav-text">QUnit单元测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u603B_u7ED3"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
