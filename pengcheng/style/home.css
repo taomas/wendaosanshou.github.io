@@ -1,0 +1,259 @@
+.home {
+  width: 10rem;
+  min-height: 100%;
+}
+
+.home-top {
+}
+
+.top-logo-wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  height: 1.875rem;
+  padding: 0 0.3906rem 0 0.2344rem;
+}
+
+.top-logo {
+  width: 4.5938rem;
+  height: 0.9922rem;
+  background: url('../assets/top-logo.png');
+  background-size: 100% 100%;
+}
+
+.top-contact {
+  width: 3.0859rem;
+  height: 0.9688rem;
+  background: url('../assets/top-phone.png');
+  background-size: 100% 100%;
+}
+
+.nav-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.0781rem;
+}
+
+.nav-item {
+  width: 2.4219rem;
+  height: 0.7813rem;
+  line-height: 0.7813rem;
+  text-align: center;
+  color: #333333;
+  background: #eaeaea;
+}
+
+.nav-item.active {
+  color: #ffffff;
+  background: #c8a46b;
+}
+
+.home-content-1 {
+  width: 10rem;
+  height: 6.8516rem;
+  background: url('../assets/banner1.png');
+  background-size: 100% 100%;
+}
+
+.home-content-2 {
+}
+
+.home-content-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1.2969rem;
+  border-bottom: 0.0313rem solid #f6f6f6;
+}
+
+.home-content-header .line-1,
+.home-content-header .line-2 {
+  width: 0.625rem;
+  height: 0.0313rem;
+  background: #d7d7d7;
+}
+
+.title-content {
+  width: auto;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  font-size: 0.5313rem;
+  padding: 0 0.2344rem;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.home-content-2-content {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0.4688rem 0.4688rem 0.3125rem 0.4688rem;
+}
+
+.tooth-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.tooth-list-last {
+  margin-top: 0.4688rem;
+}
+
+.tooth-item {
+  width: 2.4141rem;
+  height: auto;
+}
+
+.tooth-item .item-img {
+  width: 2.4141rem;
+  height: 1.4922rem;
+}
+
+.tooth-item .item-img-desc {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooth-item .item-img-desc .tooth-desc-title {
+  color: #333333;
+  font-size: 0.3594rem;
+}
+
+.tooth-item .item-img-desc .tooth-desc-content {
+  color: #5d5d5d;
+  font-size: 0.2031rem;
+  white-space: nowrap;
+}
+
+.home-content-2-content-img {
+  width: 10rem;
+  height: 4.1953rem;
+  background: url('../assets/tu2-b.png');
+  background-size: 100% 100%;
+}
+
+.home-content-3-content {
+  width: 10rem;
+  height: 10.1953rem;
+  background: url('../assets/tu3-b.png');
+  background-size: 100% 100%;
+}
+
+.home-content-4-content {
+  width: 10rem;
+  height: 5.2422rem;
+  background: url('../assets/tu4-t.png');
+  background-size: 100% 100%;
+}
+
+.home-content-6 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.8203rem;
+}
+
+.home-content-6-title {
+  width: 100%;
+  height: auto;
+  padding: 1.0156rem 0;
+}
+
+.content-6-nav-list {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-6-nav-item {
+  width: 2.4688rem;
+  height: 0.8438rem;
+  font-size: 0.4297rem;
+  line-height: 0.8438rem;
+  text-align: center;
+  background: #ffffff;
+  color: #2e2b2b;
+}
+
+.content-6-nav-item.active {
+  background: #b39058;
+  color: #ffffff;
+}
+
+.home-conent-6-content {
+  width: 9.3906rem;
+  height: 4.8906rem;
+  background: url('../assets/tu6-b.png');
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+.home-content-7 {
+  width: 100%;
+  height: auto;
+  background: #2a2a2a;
+}
+
+.home-conent-7-content-1 {
+  width: 10rem;
+  height: 4.2031rem;
+  background: url('../assets/tu7-t1.png');
+  background-size: 100% 100%;
+}
+
+.home-content-7-title {
+  width: 4.6875rem;
+  height: 1.7188rem;
+  font-size: 0.75rem;
+  margin: 0.625rem auto 0;
+  color: #ffffff;
+}
+
+.home-content-7-content-2 {
+  width: 9.6406rem;
+  height: 3.0391rem;
+  margin: 1.0938rem auto 0;
+  background: url('../assets/tu7-t2.png');
+  background-size: 100% 100%;
+}
+
+.home-content-7-copyright {
+  box-sizing: border-box;
+  width: 8.4375rem;
+  height: 3.6016rem;
+  padding: 0.7813rem 0 0.9375rem 0;
+  margin: 0.625rem auto 0;
+  border-top: 0.0156rem solid #3b3b3b;
+}
+
+.copyright-text {
+  width: 100%;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  font-size: 0.3359rem;
+  text-align: center;
+  color: #747474;
+}
