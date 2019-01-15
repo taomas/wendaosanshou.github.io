@@ -1,0 +1,51 @@
+.page-beauty {
+}
+
+.beauty-conent-1 {
+  width: 10rem;
+  height: 7.5625rem;
+  background: url('../assets/beauty/tu1-b.png');
+  background-size: 100% 100%;
+}
+
+.beauty-conent-2 {
+  width: 10rem;
+  height: 9.7344rem;
+  background: url('../assets/beauty/tu2-b.png');
+  background-size: 100% 100%;
+}
+
+.beauty-conent-3 {
+  width: 10rem;
+  height: 8.5625rem;
+  background: url('../assets/beauty/tu3-b.png');
+  background-size: 100% 100%;
+}
+
+.beauty-conent-4 {
+  width: 10rem;
+  height: 10.4688rem;
+  background: url('../assets/beauty/tu4-b.png');
+  background-size: 100% 100%;
+}
+
+.beauty-conent-5 {
+  width: 10rem;
+  height: 3.3359rem;
+  background: url('../assets/beauty/tu5-b.png');
+  background-size: 100% 100%;
+}
+
+.beauty-conent-6 {
+  width: 10rem;
+  height: 12.8828rem;
+  background: url('../assets/beauty/tu6-b.png');
+  background-size: 100% 100%;
+}
+
+.beauty-conent-7 {
+  width: 10rem;
+  height: 14.2969rem;
+  background: url('../assets/beauty/tu7-b.png');
+  background-size: 100% 100%;
+}

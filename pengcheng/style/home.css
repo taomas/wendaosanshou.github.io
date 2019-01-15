@@ -1,6 +1,7 @@
 .home {
   width: 10rem;
   min-height: 100%;
+  margin: 0 auto;
 }
 
 .home-top {
@@ -20,14 +21,14 @@
 .top-logo {
   width: 4.5938rem;
   height: 0.9922rem;
-  background: url('../assets/top-logo.png');
+  background: url('../assets/home/top-logo.png');
   background-size: 100% 100%;
 }
 
 .top-contact {
   width: 3.0859rem;
   height: 0.9688rem;
-  background: url('../assets/top-phone.png');
+  background: url('../assets/home/top-phone.png');
   background-size: 100% 100%;
 }
 
@@ -69,7 +70,7 @@
 .home-content-1 {
   width: 10rem;
   height: 6.8516rem;
-  background: url('../assets/banner1.png');
+  background: url('../assets/home/banner1.png');
   background-size: 100% 100%;
 }
 
@@ -158,28 +159,28 @@
 .home-content-2-content-img {
   width: 10rem;
   height: 4.1953rem;
-  background: url('../assets/tu2-b.png');
+  background: url('../assets/home/tu2-b.png');
   background-size: 100% 100%;
 }
 
 .home-content-3-content {
   width: 10rem;
   height: 10.1953rem;
-  background: url('../assets/tu3-b.png');
+  background: url('../assets/home/tu3-b.png');
   background-size: 100% 100%;
 }
 
 .home-content-4-content {
   width: 10rem;
   height: 5.2422rem;
-  background: url('../assets/tu4-t.png');
+  background: url('../assets/home/tu4-t.png');
   background-size: 100% 100%;
 }
 
 .home-content-5-content {
   width: 10rem;
   height: 5.6563rem;
-  background: url('../assets/tu5-b.png');
+  background: url('../assets/home/tu5-b.png');
   background-size: 100% 100%;
 }
 
@@ -224,7 +225,7 @@
 .home-conent-6-content {
   width: 9.3906rem;
   height: 4.8906rem;
-  background: url('../assets/tu6-b.png');
+  background: url('../assets/home/tu6-b.png');
   background-size: 100% 100%;
   margin: 0 auto;
 }
@@ -238,7 +239,7 @@
 .home-conent-7-content-1 {
   width: 10rem;
   height: 4.2031rem;
-  background: url('../assets/tu7-t1.png');
+  background: url('../assets/home/tu7-t1.png');
   background-size: 100% 100%;
 }
 
@@ -254,7 +255,7 @@
   width: 9.6406rem;
   height: 3.0391rem;
   margin: 1.0938rem auto 0;
-  background: url('../assets/tu7-t2.png');
+  background: url('../assets/home/tu7-t2.png');
   background-size: 100% 100%;
 }
 

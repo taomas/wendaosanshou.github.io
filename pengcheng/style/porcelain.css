@@ -1,0 +1,115 @@
+.page-porcelain {
+}
+
+.porcelain-conent-1 {
+  width: 10rem;
+  height: 7.5547rem;
+  background: url('../assets/porcelain/tu1-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-2 {
+  width: 10rem;
+  height: 8.2344rem;
+  background: url('../assets/porcelain/tu2-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-3 {
+  position: relative;
+  width: 10rem;
+  height: 5.625rem;
+  background: url('../assets/porcelain/tu3-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-3 .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5469rem;
+  width: 8.0781rem;
+  height: 1.1094rem;
+  transform: translateX(-50%);
+  background: url('../assets/porcelain/tu3-tt.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-4 {
+  position: relative;
+  width: 10rem;
+  height: 12.3438rem;
+  background: url('../assets/porcelain/tu4-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-4 .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5469rem;
+  width: 8.0313rem;
+  height: 1.0859rem;
+  transform: translateX(-50%);
+  background: url('../assets/porcelain/tu4-tt.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-5 {
+  width: 10rem;
+  height: 7.375rem;
+  background: url('../assets/porcelain/tu5-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-6 {
+  width: 10rem;
+  height: 8.25rem;
+  background: url('../assets/porcelain/tu6-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-7 {
+  position: relative;
+  width: 10rem;
+  height: 16.0313rem;
+  background: url('../assets/porcelain/tu7-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-7-content {
+  width: 9.5625rem;
+  height: 6.8594rem;
+  background: url('../assets/porcelain/tu7-tt.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-7 .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.3906rem;
+  width: 8.0781rem;
+  height: 1.0859rem;
+  transform: translateX(-50%);
+  background: url('../assets/porcelain/tu7-tt1.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-8 {
+  width: 10rem;
+  height: 12.0469rem;
+  background: url('../assets/porcelain/tu8-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-9 {
+  width: 10rem;
+  height: 13.6563rem;
+  background: url('../assets/porcelain/tu9-b.png');
+  background-size: 100% 100%;
+}
+
+.porcelain-conent-10 {
+  width: 10rem;
+  height: 12.5313rem;
+  background: url('../assets/porcelain/tu9-b.png');
+  background-size: 100% 100%;
+}

@@ -1,0 +1,219 @@
+.page-children {
+  width: 10rem;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.child-content-1 {
+  width: 10rem;
+  height: 7.7813rem;
+  background: url('../assets/children/tu1-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-2 {
+  position: relative;
+  width: 10rem;
+  height: 9.6719rem;
+}
+
+.child-content-2-top {
+  width: 10rem;
+  height: 9.6719rem;
+  background: url('../assets/children/tu2-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-2-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -0.3125rem;
+  transform: translateX(-50%);
+  width: 8.6094rem;
+  height: 1.4766rem;
+  margin: 0 auto;
+  background: url('../assets/children/tu2-tt.png');
+  background-size: 100% 100%;
+}
+
+.child-content-3 {
+  width: 10rem;
+  height: 9.1641rem;
+  margin: 0 auto;
+  background: url('../assets/children/tu3-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4 {
+  width: 10rem;
+  height: 11.1094rem;
+  background: url('../assets/children/tu4-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4-btn-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.1875rem;
+}
+
+.child-content-4-btn-wrap .btn-1 {
+  width: 4.6875rem;
+  height: 1.1172rem;
+  background: url('../assets/children/tu4-z1-1.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4-btn-wrap .btn-1:active {
+  background: url('../assets/children/tu4-z1.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4-btn-wrap .btn-2 {
+  width: 4.6875rem;
+  height: 1.1172rem;
+  margin-left: 0.2031rem;
+  background: url('../assets/children/tu4-z2-2.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4-btn-wrap .btn-2:active {
+  background: url('../assets/children/tu4-z2.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4-content {
+  position: relative;
+  width: 10rem;
+  height: 7.0313rem;
+  margin-top: 0.1563rem;
+  background: url('../assets/children/tu4-tt.png');
+  background-size: 100% 100%;
+}
+
+.child-content-4-content .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.3906rem;
+  width: 2.8594rem;
+  height: 0.8984rem;
+  transform: translateX(-50%);
+  background: url('../assets/children/dwett.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5 {
+  width: 10rem;
+  height: 10.7813rem;
+  background: url('../assets/children/tu5-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5-btn-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.1875rem;
+}
+
+.child-content-5-btn-wrap .btn-1 {
+  width: 4.6875rem;
+  height: 1.1172rem;
+  background: url('../assets/children/tu5-bz3-3.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5-btn-wrap .btn-1:active {
+  background: url('../assets/children/tu5-bz3.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5-btn-wrap .btn-2 {
+  width: 4.6875rem;
+  height: 1.1172rem;
+  margin-left: 0.2031rem;
+  background: url('../assets/children/tu5-bz4-4.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5-btn-wrap .btn-2:active {
+  background: url('../assets/children/tu5-bz4.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5-content {
+  position: relative;
+  width: 10rem;
+  height: 7.0313rem;
+  margin-top: 0.1563rem;
+  background: url('../assets/children/tu5-tt.png');
+  background-size: 100% 100%;
+}
+
+.child-content-5-content .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.3906rem;
+  width: 2.8594rem;
+  height: 0.8984rem;
+  transform: translateX(-50%);
+  background: url('../assets/children/dwett.png');
+  background-size: 100% 100%;
+}
+
+.child-content-6 {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 22.9609rem;
+  padding-top: 2.4219rem;
+  background: url('../assets/children/tu6-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-6-content {
+  position: relative;
+  width: 10rem;
+  height: 7.0313rem;
+  background: url('../assets/children/tu6-tt.png');
+  background-size: 100% 100%;
+}
+
+.child-content-6-content .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.3906rem;
+  width: 2.8594rem;
+  height: 0.8984rem;
+  transform: translateX(-50%);
+  background: url('../assets/children/dwett.png');
+  background-size: 100% 100%;
+}
+
+.child-content-7 {
+  width: 10rem;
+  height: 9.9375rem;
+  background: url('../assets/children/tu7-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-8 {
+  position: relative;
+  width: 10rem;
+  height: 7.6875rem;
+  background: url('../assets/children/tu8-b.png');
+  background-size: 100% 100%;
+}
+
+.child-content-8-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0.7813rem;
+  width: 8.125rem;
+  height: 1.5781rem;
+  transform: translateX(-50%);
+  background: url('../assets/children/tu8-tt.png');
+  background-size: 100% 100%;
+}

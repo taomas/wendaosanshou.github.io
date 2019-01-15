@@ -1,0 +1,65 @@
+.page-correction {
+}
+
+.correction-conent-1 {
+  width: 10rem;
+  height: 7.5313rem;
+  background: url('../assets/correction/banner.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-2 {
+  width: 10rem;
+  height: 7.5156rem;
+  background: url('../assets/correction/tu2-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-3 {
+  width: 10rem;
+  height: 6.4922rem;
+  background: url('../assets/correction/tu3-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-4 {
+  width: 10rem;
+  height: 12.1094rem;
+  background: url('../assets/correction/tu4-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-5 {
+  width: 10rem;
+  height: 11.6484rem;
+  background: url('../assets/correction/tu5-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-6 {
+  width: 10rem;
+  height: 14.6953rem;
+  background: url('../assets/correction/tu6-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-7 {
+  width: 10rem;
+  height: 10.3125rem;
+  background: url('../assets/correction/tu7-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-8 {
+  width: 10rem;
+  height: 6.6016rem;
+  background: url('../assets/correction/tu8-b.png');
+  background-size: 100% 100%;
+}
+
+.correction-conent-9 {
+  width: 10rem;
+  height: 9.7266rem;
+  background: url('../assets/correction/tu9-b.png');
+  background-size: 100% 100%;
+}

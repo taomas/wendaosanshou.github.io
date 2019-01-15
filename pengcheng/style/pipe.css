@@ -1,0 +1,81 @@
+.pipe-conent-1 {
+  width: 10rem;
+  height: 7.4844rem;
+  background: url('../assets/pipe/tu1-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-2 {
+  width: 10rem;
+  height: 8.8984rem;
+  background: url('../assets/pipe/tu2-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-3 {
+  width: 10rem;
+  height: 12.1094rem;
+  background: url('../assets/pipe/tu3-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-4 {
+  width: 10rem;
+  height: 12.0703rem;
+  background: url('../assets/pipe/tu4-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-5 {
+  width: 10rem;
+  height: 13.125rem;
+  background: url('../assets/pipe/tu5-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-6 {
+  width: 10rem;
+  height: 8.0156rem;
+  background: url('../assets/pipe/tu6-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-7 {
+  width: 10rem;
+  height: 6.8672rem;
+  background: url('../assets/pipe/tu7-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-8 {
+  width: 10rem;
+  height: 9.5078rem;
+  background: url('../assets/pipe/tu8-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-9 {
+  position: relative;
+  width: 10rem;
+  height: 5.1719rem;
+  background: url('../assets/pipe/tu9-b.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-9 .btn-toogle {
+  position: absolute;
+  left: 50%;
+  bottom: 0.625rem;
+  width: 8.0234rem;
+  height: 1.2188rem;
+  transform: translateX(-50%);
+  background: url('../assets/pipe/tu9-tt.png');
+  background-size: 100% 100%;
+}
+
+.pipe-conent-10 {
+  width: 10rem;
+  height: 9.7734rem;
+  background: url('../assets/pipe/tu10-b.png');
+  background-size: 100% 100%;
+}
