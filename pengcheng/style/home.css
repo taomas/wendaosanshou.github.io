@@ -126,6 +126,7 @@
   width: 9.5078rem;
   height: 5.2422rem;
   margin: 0 auto;
+  transition: all 0.3s;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -183,4 +184,9 @@
   background: url('../assets/home/tu6-b.png');
   background-size: 100% 100%;
   margin: 0 auto;
+}
+
+.home-content-6-content .swiper-container .swiper-slide img {
+  width: 9.3906rem;
+  height: 4.8906rem;
 }

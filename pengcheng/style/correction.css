@@ -30,10 +30,36 @@
 }
 
 .correction-conent-5 {
+  box-sizing: border-box;
   width: 10rem;
   height: 11.6484rem;
+  padding-top: 2.4219rem;
   background: url('../assets/correction/tu5-b.png');
   background-size: 100% 100%;
+}
+
+.correction-conent-5 .swiper-container {
+  width: 10rem;
+  height: 8.5938rem;
+}
+
+.swiper-container .slide-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 10rem;
+  height: 956.0064px;
+}
+
+.image-1,
+.image-2 {
+  width: 4.5156rem;
+  height: 7.2891rem;
+}
+
+.swiper-container .slide-content .image-2 {
+  margin-left: 0.4219rem;
 }
 
 .correction-conent-6 {

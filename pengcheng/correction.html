@@ -10,6 +10,7 @@
   <meta content="maximum-dpr=2" name="flexible" />
   <link rel="stylesheet" href="./style/base.css">
   <link rel="stylesheet" href="./style/correction.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
   <title>深圳鹏程牙科</title>
   <script src="./flexible/flexible_css.js"></script>
   <script src="./flexible/flexible.js"></script>
@@ -23,16 +24,26 @@
         <div class="top-contact"></div>
       </div>
       <ul class="nav-list">
-        <li class="nav-item active">首页</li>
+        <li class="nav-item">
+          <a href="./home.html">首页</a>
+        </li>
         <li class="nav-item">就诊流程</li>
         <li class="nav-item">医疗团队</li>
         <li class="nav-item">专家案例</li>
       </ul>
       <ul class="nav-list">
-        <li class="nav-item">牙齿种植</li>
-        <li class="nav-item">美学修复</li>
-        <li class="nav-item">根管治疗</li>
-        <li class="nav-item">牙齿矫正</li>
+        <li class="nav-item">
+          <a href="./planting.html">牙齿种植</a>
+        </li>
+        <li class="nav-item">
+          <a href="./beauty.html">美学修复</a>
+        </li>
+        <li class="nav-item">
+          <a href="./pipe.html">根管治疗</a>
+        </li>
+        <li class="nav-item active">
+          <a href="./correction.html">牙齿矫正</a>
+        </li>
       </ul>
     </div>
     <div class="correction-content">
@@ -40,7 +51,31 @@
       <div class="correction-conent-2"></div>
       <div class="correction-conent-3"></div>
       <div class="correction-conent-4"></div>
-      <div class="correction-conent-5"></div>
+      <div class="correction-conent-5">
+        <div class="swiper-container home-content-4-content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <div class="slide-content">
+                <img class="image-1" src="./assets/correction/tu5-t1.png" alt="">
+                <img class="image-2" src="./assets/correction/tu5-t2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <div class="slide-content">
+                <img class="image-1" src="./assets/correction/tu5-t1.png" alt="">
+                <img class="image-2" src="./assets/correction/tu5-t2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide slide-3">
+              <div class="slide-content">
+                <img class="image-1" src="./assets/correction/tu5-t1.png" alt="">
+                <img class="image-2" src="./assets/correction/tu5-t2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
       <div class="correction-conent-6"></div>
       <div class="correction-conent-7"></div>
       <div class="correction-conent-8"></div>
@@ -60,6 +95,8 @@
       </div>
     </div>
   </div>
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>

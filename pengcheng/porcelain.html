@@ -10,6 +10,7 @@
   <meta content="maximum-dpr=2" name="flexible" />
   <link rel="stylesheet" href="./style/base.css">
   <link rel="stylesheet" href="./style/porcelain.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
   <title>深圳鹏程牙科</title>
   <script src="./flexible/flexible_css.js"></script>
   <script src="./flexible/flexible.js"></script>
@@ -23,16 +24,26 @@
         <div class="top-contact"></div>
       </div>
       <ul class="nav-list">
-        <li class="nav-item active">首页</li>
+        <li class="nav-item active">
+          <a href="./home.html">首页</a>
+        </li>
         <li class="nav-item">就诊流程</li>
         <li class="nav-item">医疗团队</li>
         <li class="nav-item">专家案例</li>
       </ul>
       <ul class="nav-list">
-        <li class="nav-item">牙齿种植</li>
-        <li class="nav-item">美学修复</li>
-        <li class="nav-item">根管治疗</li>
-        <li class="nav-item">牙齿矫正</li>
+        <li class="nav-item">
+          <a href="./planting.html">牙齿种植</a>
+        </li>
+        <li class="nav-item">
+          <a href="./beauty.html">美学修复</a>
+        </li>
+        <li class="nav-item">
+          <a href="./pipe.html">根管治疗</a>
+        </li>
+        <li class="nav-item">
+          <a href="./correction.html">牙齿矫正</a>
+        </li>
       </ul>
     </div>
     <div class="porcelain-content">
@@ -47,7 +58,26 @@
       <div class="porcelain-conent-5"></div>
       <div class="porcelain-conent-6"></div>
       <div class="porcelain-conent-7">
-        <div class="porcelain-conent-7-content"></div>
+        <ul class="porcelain-conent-7-nav-list">
+          <li class="porcelain-conent-7-nav-item active">18-30岁的青年群体</li>
+          <li class="porcelain-conent-7-nav-item">30-50年的中年人群</li>
+          <li class="porcelain-conent-7-nav-item">50岁以上的老年人群</li>
+        </ul>
+        <div class="porcelain-conent-7-content">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide-1">
+                <img src="./assets/porcelain/tu7-tt.png" alt="">
+              </div>
+              <div class="swiper-slide slide-2">
+                <img src="./assets/porcelain/tu7-tt.png" alt="">
+              </div>
+              <div class="swiper-slide slide-3">
+                <img src="./assets/porcelain/tu7-tt.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="btn-toogle"></div>
       </div>
       <div class="porcelain-conent-8"></div>
@@ -67,6 +97,8 @@
       </div>
     </div>
   </div>
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>

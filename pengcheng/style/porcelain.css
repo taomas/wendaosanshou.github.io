@@ -68,18 +68,74 @@
 }
 
 .porcelain-conent-7 {
+  box-sizing: border-box;
   position: relative;
   width: 10rem;
   height: 16.0313rem;
+  padding-top: 4.6875rem;
   background: url('../assets/porcelain/tu7-b.png');
   background-size: 100% 100%;
+}
+
+.porcelain-conent-7-nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.porcelain-conent-7-nav-item {
+  width: 3.1094rem;
+  height: 1rem;
+  font-size: 0.2969rem;
+  line-height: 1rem;
+  text-align: center;
+  margin-left: 0.0781rem;
+  background: #ecf2f6;
+  color: #428dec;
+  border-radius: 2px;
+}
+
+.porcelain-conent-7-nav-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.porcelain-conent-7-nav-item.active {
+  color: #ffffff;
+  background: #428dec;
+}
+
+.porcelain-conent-7-title .title {
+  font-size: 0.7109rem;
+  color: #428dec;
+  text-align: center;
+}
+
+.porcelain-conent-7-title .sub-title {
+  width: 4.9688rem;
+  height: 0.625rem;
+  font-size: 0.4688rem;
+  line-height: 0.4688rem;
+  margin-top: 0.2344rem;
+  text-align: center;
+  background: #ffb427;
+}
+
+.porcelain-conent-7-title .title-desc {
+  padding: 0 0.7813rem;
+  font-size: 0.25rem;
+  color: #3d3d3d;
 }
 
 .porcelain-conent-7-content {
   width: 9.5625rem;
   height: 6.8594rem;
-  background: url('../assets/porcelain/tu7-tt.png');
-  background-size: 100% 100%;
+  margin: 0.2344rem auto 0;
+}
+
+.swiper-container .swiper-slide img {
+  width: 9.5625rem;
+  height: 6.8594rem;
 }
 
 .porcelain-conent-7 .btn-toogle {
