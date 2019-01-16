@@ -45,11 +45,10 @@
 }
 
 .nav-item {
-  min-width: 2.4219rem;
+  width: 2.4688rem;
   height: 0.7813rem;
   line-height: 0.7813rem;
   margin-left: 0.0391rem;
-  flex-grow: 1;
   text-align: center;
   color: #333333;
   background: #eaeaea;
