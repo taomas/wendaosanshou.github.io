@@ -30,10 +30,51 @@
 }
 
 .planting-conent-5 {
+  box-sizing: border-box;
   width: 10rem;
   height: 8.0469rem;
+  padding-top: 2.1875rem;
   background: url('../assets/planting/tu5-b.png');
   background-size: 100% 100%;
+}
+
+.planting-conent-5 .swiper-container {
+  width: 10rem;
+  height: 5.7031rem;
+}
+
+.planting-conent-5 .swiper-slide img {
+  display: block;
+  width: 9.4531rem;
+  height: 4.5313rem;
+  margin: 0 auto;
+}
+
+.planting-conent-8 .swiper-container {
+  width: 10rem;
+  height: 6.1719rem;
+}
+
+.planting-conent-8 .swiper-slide img {
+  display: block;
+  width: 9.375rem;
+  height: 5.0859rem;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  opacity: 1;
+  background: #ffffff;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 30px;
+  height: 8px;
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 .planting-conent-6 {
@@ -51,8 +92,10 @@
 }
 
 .planting-conent-8 {
+  box-sizing: border-box;
   width: 10rem;
   height: 8.0938rem;
+  padding-top: 1.7969rem;
   background: url('../assets/planting/tu8-b.png');
   background-size: 100% 100%;
 }

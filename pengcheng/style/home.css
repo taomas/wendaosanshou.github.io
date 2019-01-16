@@ -7,66 +7,6 @@
 .home-top {
 }
 
-.top-logo-wrap {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 10rem;
-  height: 1.875rem;
-  padding: 0 0.3906rem 0 0.2344rem;
-}
-
-.top-logo {
-  width: 4.5938rem;
-  height: 0.9922rem;
-  background: url('../assets/home/top-logo.png');
-  background-size: 100% 100%;
-}
-
-.top-contact {
-  width: 3.0859rem;
-  height: 0.9688rem;
-  background: url('../assets/home/top-phone.png');
-  background-size: 100% 100%;
-}
-
-.nav-list {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  margin-top: 0.0391rem;
-}
-
-.nav-list:nth-child(1) {
-  margin-top: 0;
-}
-
-.nav-item {
-  min-width: 2.4219rem;
-  height: 0.7813rem;
-  line-height: 0.7813rem;
-  margin-left: 0.0391rem;
-  flex-grow: 1;
-  text-align: center;
-  color: #333333;
-  background: #eaeaea;
-}
-
-.nav-item:nth-child(1) {
-  margin-left: 0;
-}
-
-.nav-item.active {
-  color: #ffffff;
-  background: #c8a46b;
-}
-
 .home-content-1 {
   width: 10rem;
   height: 6.8516rem;
@@ -170,11 +110,26 @@
   background-size: 100% 100%;
 }
 
-.home-content-4-content {
+.line-split {
   width: 10rem;
+  height: 0.25rem;
+  background: #f6f6f6;
+}
+
+.home-content-4-content.swiper-container {
+  width: 10rem;
+  height: 6.25rem;
+}
+
+.home-content-4-content .swiper-slide img {
+  display: block;
+  width: 9.5078rem;
   height: 5.2422rem;
-  background: url('../assets/home/tu4-t.png');
-  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #b39058;
 }
 
 .home-content-5-content {
@@ -228,51 +183,4 @@
   background: url('../assets/home/tu6-b.png');
   background-size: 100% 100%;
   margin: 0 auto;
-}
-
-.home-content-7 {
-  width: 100%;
-  height: auto;
-  background: #2a2a2a;
-}
-
-.home-conent-7-content-1 {
-  width: 10rem;
-  height: 4.2031rem;
-  background: url('../assets/home/tu7-t1.png');
-  background-size: 100% 100%;
-}
-
-.home-content-7-title {
-  width: 4.6875rem;
-  height: 1.7188rem;
-  font-size: 0.75rem;
-  margin: 0.625rem auto 0;
-  color: #ffffff;
-}
-
-.home-content-7-content-2 {
-  width: 9.6406rem;
-  height: 3.0391rem;
-  margin: 1.0938rem auto 0;
-  background: url('../assets/home/tu7-t2.png');
-  background-size: 100% 100%;
-}
-
-.home-content-7-copyright {
-  box-sizing: border-box;
-  width: 8.4375rem;
-  height: 3.6016rem;
-  padding: 0.7813rem 0 0.9375rem 0;
-  margin: 0.625rem auto 0;
-  border-top: 0.0156rem solid #3b3b3b;
-}
-
-.copyright-text {
-  width: 100%;
-  height: 0.625rem;
-  line-height: 0.625rem;
-  font-size: 0.3359rem;
-  text-align: center;
-  color: #747474;
 }

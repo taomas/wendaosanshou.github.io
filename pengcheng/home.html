@@ -8,7 +8,9 @@
   <meta content="yes" name="apple-touch-fullscreen" />
   <meta content="telephone=no,email=no" name="format-detection" />
   <meta content="maximum-dpr=2" name="flexible" />
+  <link rel="stylesheet" href="./style/base.css">
   <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
   <title>深圳鹏程牙科</title>
   <script src="./flexible/flexible_css.js"></script>
   <script src="./flexible/flexible.js"></script>
@@ -100,14 +102,29 @@
         </div>
         <div class="home-content-3-content"></div>
       </div>
+      <div class="line-split"></div>
       <div class="home-content-4">
         <div class="home-content-4-header home-content-header">
           <span class="line-1"></span>
           <span class="title-content">口腔真实案例</span>
           <span class="line-2"></span>
         </div>
-        <div class="home-content-4-content"></div>
+        <div class="swiper-container home-content-4-content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <img src="./assets/home/tu4-t.png" alt="">
+            </div>
+            <div class="swiper-slide slide-2">
+              <img src="./assets/home/tu4-t.png" alt="">
+            </div>
+            <div class="swiper-slide slide-3">
+              <img src="./assets/home/tu4-t.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
+      <div class="line-split"></div>
       <div class="home-content-5">
         <div class="home-content-5-header home-content-header">
           <span class="line-1"></span>
@@ -116,6 +133,7 @@
         </div>
         <div class="home-content-5-content"></div>
       </div>
+      <div class="line-split"></div>
       <div class="home-content-6">
         <div class="home-content-6-title">
           <ul class="content-6-nav-list">
@@ -139,6 +157,8 @@
       </div>
     </div>
   </div>
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>
