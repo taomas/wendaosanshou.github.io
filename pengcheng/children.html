@@ -10,6 +10,7 @@
   <meta content="maximum-dpr=2" name="flexible" />
   <link rel="stylesheet" href="./style/base.css">
   <link rel="stylesheet" href="./style/children.css">
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
   <title>深圳鹏程牙科</title>
   <script src="./flexible/flexible_css.js"></script>
   <script src="./flexible/flexible.js"></script>
@@ -53,12 +54,24 @@
     </div>
     <div class="child-content-3"></div>
     <div class="child-content-4">
-      <div class="child-content-4-btn-wrap">
+      <!--<div class="child-content-4-btn-wrap">
         <div class="btn-1"></div>
         <div class="btn-2"></div>
-      </div>
+      </div>-->
       <div class="child-content-4-content">
-        <div class="btn-toogle"></div>
+        <div class="swiper-container swiper-container-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <img src="./assets/children/tu4-tt.png" alt="">
+              <div class="btn-toogle"></div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <img src="./assets/children/tu4-tt.png" alt="">
+              <div class="btn-toogle"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-1"></div>
+        </div>
       </div>
     </div>
     <div class="child-content-5">
@@ -67,7 +80,19 @@
         <div class="btn-2"></div>
       </div>
       <div class="child-content-5-content">
-        <div class="btn-toogle"></div>
+        <div class="swiper-container swiper-container-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <img src="./assets/children/tu5-tt.png" alt="">
+              <div class="btn-toogle"></div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <img src="./assets/children/tu5-tt.png" alt="">
+              <div class="btn-toogle"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-2"></div>
+        </div>
       </div>
     </div>
     <div class="child-content-6">
@@ -80,17 +105,20 @@
     <div class="child-content-8">
       <div class="child-content-8-btn"></div>
     </div>
-    <div class="home-content-7">
-      <div class="home-conent-7-content-1"></div>
-      <div class="home-content-7-title">深圳鹏程口腔医保定点单位</div>
-      <div class="home-content-7-content-2"></div>
-      <div class="home-content-7-copyright">
+    <div class="footer">
+      <div class="footer-content-1"></div>
+      <div class="footer-title">深圳鹏程口腔医保定点单位</div>
+      <div class="footer-content-2"></div>
+      <div class="footer-copyright">
         <div class="copyright-text">版权所有：深圳鹏程医院口腔科</div>
         <div class="copyright-text">本网站信息仅供参考，不能作为诊疗及医疗依据</div>
         <div class="copyright-text">备案号：粤ICP备16031789号</div>
       </div>
     </div>
   </div>
+  <script src="./lib/swiper/js/swiper.min.js"></script>
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./js/children.js"></script>
 </body>
 
 </html>

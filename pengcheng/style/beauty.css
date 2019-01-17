@@ -25,7 +25,7 @@
 .beauty-content-4 {
   box-sizing: border-box;
   width: 10rem;
-  height: 10.4688rem;
+  height: auto;
   padding: 0 0.1406rem;
   padding-top: 2.2656rem;
   background: url('../assets/beauty/tu4-b.png');
@@ -123,7 +123,7 @@
 
 .split-line {
   width: 10rem;
-  height: 2.0313rem;
+  height: 0.5469rem;
   background: #ededed;
 }
 

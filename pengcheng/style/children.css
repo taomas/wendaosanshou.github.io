@@ -86,14 +86,65 @@
 
 .child-content-4-content {
   position: relative;
+}
+
+.child-content-4-content .swiper-container-1 {
+  box-sizing: border-box;
+  position: relative;
+  width: 10rem;
+  height: auto;
+  padding-top: 3.5938rem;
+}
+
+.swiper-container-1 .swiper-slide {
+  position: relative;
   width: 10rem;
   height: 7.0313rem;
-  margin-top: 0.1563rem;
+}
+
+.swiper-container-1 .swiper-slide img {
+  width: 10rem;
+  height: 7.0313rem;
   background: url('../assets/children/tu4-tt.png');
+}
+
+.swiper-pagination-1 {
+  position: absolute;
+  left: 0;
+  top: 1.9531rem;
+  width: 100%;
+  height: 1.1172rem;
+}
+
+.swiper-pagination-1 .swiper-pagination-item {
+  width: 4.6875rem;
+  height: 1.1172rem;
+
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-1 .swiper-pagination-item-0 {
+  background: url('../assets/children/tu4-z1-1.png');
   background-size: 100% 100%;
 }
 
-.child-content-4-content .btn-toogle {
+.swiper-pagination-1 .swiper-pagination-item-1 {
+  background: url('../assets/children/tu4-z2-2.png');
+  background-size: 100% 100%;
+}
+
+.swiper-pagination-1 .swiper-pagination-item-0.swiper-pagination-bullet-active {
+  background: url('../assets/children/tu4-z1.png');
+  background-size: 100% 100%;
+}
+
+.swiper-pagination-1 .swiper-pagination-item-1.swiper-pagination-bullet-active {
+  background: url('../assets/children/tu4-z2.png');
+  background-size: 100% 100%;
+}
+
+.swiper-container-1 .btn-toogle {
   position: absolute;
   left: 50%;
   bottom: 0.3906rem;
@@ -105,55 +156,69 @@
 }
 
 .child-content-5 {
+  position: relative;
   width: 10rem;
   height: 10.7813rem;
   background: url('../assets/children/tu5-b.png');
   background-size: 100% 100%;
 }
 
-.child-content-5-btn-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2.1875rem;
+.child-content-5-content .swiper-container-2 {
+  box-sizing: border-box;
+  position: relative;
+  width: 10rem;
+  height: auto;
+  padding-top: 3.5938rem;
 }
 
-.child-content-5-btn-wrap .btn-1 {
+.swiper-container-2 .swiper-slide {
+  position: relative;
+  width: 10rem;
+  height: 7.0313rem;
+}
+
+.swiper-container-2 .swiper-slide img {
+  width: 10rem;
+  height: 7.0313rem;
+}
+
+.swiper-pagination-2 {
+  position: absolute;
+  left: 0;
+  top: 1.9531rem;
+  width: 100%;
+  height: 1.1172rem;
+}
+
+.swiper-pagination-2 .swiper-pagination-item {
   width: 4.6875rem;
   height: 1.1172rem;
+
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-2 .swiper-pagination-item-0 {
   background: url('../assets/children/tu5-bz3-3.png');
   background-size: 100% 100%;
 }
 
-.child-content-5-btn-wrap .btn-1:active {
-  background: url('../assets/children/tu5-bz3.png');
-  background-size: 100% 100%;
-}
-
-.child-content-5-btn-wrap .btn-2 {
-  width: 4.6875rem;
-  height: 1.1172rem;
-  margin-left: 0.2031rem;
+.swiper-pagination-2 .swiper-pagination-item-1 {
   background: url('../assets/children/tu5-bz4-4.png');
   background-size: 100% 100%;
 }
 
-.child-content-5-btn-wrap .btn-2:active {
+.swiper-pagination-2 .swiper-pagination-item-0.swiper-pagination-bullet-active {
+  background: url('../assets/children/tu5-bz3.png');
+  background-size: 100% 100%;
+}
+
+.swiper-pagination-2 .swiper-pagination-item-1.swiper-pagination-bullet-active {
   background: url('../assets/children/tu5-bz4.png');
   background-size: 100% 100%;
 }
 
-.child-content-5-content {
-  position: relative;
-  width: 10rem;
-  height: 7.0313rem;
-  margin-top: 0.1563rem;
-  background: url('../assets/children/tu5-tt.png');
-  background-size: 100% 100%;
-}
-
-.child-content-5-content .btn-toogle {
+.swiper-container-2 .btn-toogle {
   position: absolute;
   left: 50%;
   bottom: 0.3906rem;
