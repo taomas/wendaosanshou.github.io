@@ -32,26 +32,6 @@
   background-size: 100% 100%;
 }
 
-.beauty-content-4-list {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.beauty-content-4-item {
-  width: 3.1875rem;
-  height: 0.875rem;
-  line-height: 0.875rem;
-  text-align: center;
-  font-size: 0.4297rem;
-  color: #5a5a5a;
-  margin-left: 0.0938rem;
-  background: #ffffff;
-}
-
 .beauty-content-4-item:nth-child(1) {
   margin-left: 0;
 }
@@ -61,16 +41,56 @@
   background: #4a9bf6;
 }
 
-.beauty-content-4 .swiper-container {
+.beauty-content-4 .swiper-container-1 {
+  position: relative;
   width: 9.7188rem;
   height: auto;
-  margin: 0.5156rem auto 0;
+  padding-top: 1.5625rem;
 }
 
-.beauty-content-4 .swiper-container .swiper-slide {
+.beauty-content-4 .swiper-container-1 .swiper-slide {
   box-sizing: border-box;
   padding-top: 0.2188rem;
   background: #ffffff;
+}
+
+.swiper-pagination-1,
+.swiper-pagination-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-1 .swiper-pagination-item,
+.swiper-pagination-2 .swiper-pagination-item {
+  display: block;
+  width: 3.1875rem;
+  height: 0.875rem;
+  line-height: 0.875rem;
+  text-align: center;
+  font-size: 0.4297rem;
+  color: #5a5a5a;
+  margin-left: 0.0938rem;
+  opacity: 1;
+  background: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-2 .swiper-pagination-item {
+  background: #e1e1e1;
+}
+
+.swiper-pagination-1 .swiper-pagination-item.swiper-pagination-bullet-active,
+.swiper-pagination-2 .swiper-pagination-item.swiper-pagination-bullet-active {
+  color: #ffffff;
+  background: #4a9bf6;
 }
 
 .slide-title {
@@ -145,13 +165,13 @@
   background: #4a9bf6;
 }
 
-.beauty-content-5 .swiper-container {
+.beauty-content-5 .swiper-container-2 {
   width: 10rem;
   height: auth;
-  margin-top: 0.1953rem;
+  padding-top: 1.5625rem;
 }
 
-.beauty-content-5 .swiper-container .swiper-slide img {
+.beauty-content-5 .swiper-container-2 .swiper-slide img {
   width: 9.9844rem;
   height: 11.0391rem;
 }

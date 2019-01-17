@@ -62,6 +62,10 @@
   margin-left: 0.4219rem;
 }
 
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #22b2c3;
+}
+
 .correction-conent-6 {
   width: 10rem;
   height: 14.6953rem;

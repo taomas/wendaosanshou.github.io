@@ -4,40 +4,26 @@
       direction: 'horizontal', // 垂直切换选项
       loop: true, // 循环模式选项
       pagination: {
-        el: '.swiper-pagination-1'
-      }
-    })
-  }
-
-  function initSwiper2() {
-    var mySwiper2 = new Swiper('.swiper-container-2', {
-      direction: 'horizontal', // 垂直切换选项
-      loop: true, // 循环模式选项
-      // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination-2',
+        el: '.swiper-pagination-1',
         clickable: true,
         renderBullet: function(index, className) {
           switch (index) {
             case 0:
-              text = '荣誉资质'
+              text = '18-30岁的青年群体'
               break
             case 1:
-              text = '公益活动'
+              text = '30-50年的中年人群'
               break
             case 2:
-              text = '医院环境'
-              break
-            case 3:
-              text = '最新学术'
+              text = '50岁以上的老年人群'
               break
           }
           return (
-            '<li class="swiper-pagination-item ' +
+            '<span class="swiper-pagination-item ' +
             className +
             '">' +
             text +
-            '</li>'
+            '</span>'
           )
         }
       }
@@ -46,6 +32,5 @@
 
   $(document).ready(function() {
     initSwiper1()
-    initSwiper2()
   })
 })()

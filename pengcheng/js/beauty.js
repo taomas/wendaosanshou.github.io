@@ -4,7 +4,28 @@
       direction: 'horizontal', // 垂直切换选项
       loop: true, // 循环模式选项
       pagination: {
-        el: '.swiper-pagination-1'
+        el: '.swiper-pagination-1',
+        clickable: true,
+        renderBullet: function(index, className) {
+          switch (index) {
+            case 0:
+              text = '仿生美容冠'
+              break
+            case 1:
+              text = '针对松动牙'
+              break
+            case 2:
+              text = '针对畸形牙'
+              break
+          }
+          return (
+            '<span class="swiper-pagination-item ' +
+            className +
+            '">' +
+            text +
+            '</span>'
+          )
+        }
       }
     })
   }
@@ -20,24 +41,21 @@
         renderBullet: function(index, className) {
           switch (index) {
             case 0:
-              text = '荣誉资质'
+              text = '仿生美容冠'
               break
             case 1:
-              text = '公益活动'
+              text = '美学全瓷牙'
               break
             case 2:
-              text = '医院环境'
-              break
-            case 3:
-              text = '最新学术'
+              text = '3D烤瓷贴面'
               break
           }
           return (
-            '<li class="swiper-pagination-item ' +
+            '<span class="swiper-pagination-item ' +
             className +
             '">' +
             text +
-            '</li>'
+            '</span>'
           )
         }
       }
