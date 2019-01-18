@@ -16,3 +16,7 @@ https://wendaosanshou.github.io/pengcheng/beauty.html
 https://wendaosanshou.github.io/pengcheng/correction.html
 牙齿种植：
 https://wendaosanshou.github.io/pengcheng/planting.html
+信息流矫正：
+https://wendaosanshou.github.io/pengcheng/correction-flow.html
+信息流种植：
+https://wendaosanshou.github.io/pengcheng/planting-flow.html
