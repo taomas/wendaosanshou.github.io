@@ -147,7 +147,15 @@
   text-align: center;
 }
 
+.list-wrap {
+  width: 8.75rem;
+  height: 8.0859rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .tel-list {
+  box-sizing: border-box;
   width: 8.7031rem;
   height: 8.0859rem;
   padding: 0 0.6719rem 0 0.8906rem;

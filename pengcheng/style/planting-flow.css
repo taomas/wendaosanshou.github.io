@@ -166,6 +166,7 @@
   width: 8.75rem;
   height: 8.0859rem;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .tel-list {
