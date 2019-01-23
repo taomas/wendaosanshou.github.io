@@ -133,10 +133,11 @@ a:active {
 
 .home-menu {
   position: fixed;
-  left: 0;
+  left: 50%;
   bottom: 0;
   width: 10rem;
   height: 1.4063rem;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
