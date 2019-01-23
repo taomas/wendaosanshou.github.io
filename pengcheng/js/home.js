@@ -44,9 +44,21 @@
     })
   }
 
+  function initSwiper3() {
+    var mySwiper1 = new Swiper('.swiper-container-3', {
+      direction: 'horizontal', // 垂直切换选项
+      loop: true, // 循环模式选项
+      autoplay: {
+        delay: 3000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true
+      }
+    })
+  }
+
   $(document).ready(function() {
     initSwiper1()
     initSwiper2()
-    $('body').css('visibility', 'visible')
+    initSwiper3()
   })
 })()

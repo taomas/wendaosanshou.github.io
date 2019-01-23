@@ -46,9 +46,10 @@
 
 .nav-item {
   width: 2.4531rem;
-  height: 0.7813rem;
-  line-height: 0.7813rem;
+  height: 0.9844rem;
+  line-height: 0.9844rem;
   margin-left: 0.0391rem;
+  font-size: 0.3906rem;
   flex: 1;
   text-align: center;
   color: #333333;
@@ -85,6 +86,7 @@ a:active {
 .footer {
   width: 100%;
   height: auto;
+  padding-bottom: 1.4063rem;
   background: #2a2a2a;
 }
 
@@ -127,4 +129,79 @@ a:active {
   font-size: 0.3359rem;
   text-align: center;
   color: #747474;
+}
+
+.home-menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 1.4063rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
+  z-index: 1111;
+}
+
+.menu-tel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 3.8672rem;
+  height: 1.4063rem;
+  color: #ffffff;
+  font-size: 0.4297rem;
+  background: #ffa800;
+}
+
+.icon-tel {
+  display: block;
+  width: 0.8594rem;
+  height: 0.9844rem;
+  margin-right: 0.1563rem;
+  background: url('../assets/home/icon-tel.png');
+  background-size: 100% 100%;
+}
+
+.menu-chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 4.375rem;
+  height: 1.4063rem;
+  color: #ffffff;
+  background: #ad2929;
+  font-size: 0.4297rem;
+}
+
+.icon-chat {
+  display: block;
+  width: 0.8594rem;
+  height: 0.9844rem;
+  margin-right: 0.1563rem;
+  background: url('../assets/home/icon-chat.gif');
+  background-size: 100% 100%;
+}
+
+.menu-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.7656rem;
+  height: 1.4063rem;
+  font-size: 0.3125rem;
+  color: #3d3d3d;
+}
+
+.icon-home {
+  display: block;
+  width: 0.6328rem;
+  height: 0.6328rem;
+  background: url('../assets/home/icon-home.png');
+  background-size: 100% 100%;
 }

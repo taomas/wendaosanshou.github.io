@@ -9,7 +9,7 @@
         renderBullet: function(index, className) {
           switch (index) {
             case 0:
-              text = '仿生美容冠'
+              text = '针对蛀牙'
               break
             case 1:
               text = '针对松动牙'

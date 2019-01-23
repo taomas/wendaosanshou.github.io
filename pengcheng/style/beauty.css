@@ -50,6 +50,8 @@
 
 .beauty-content-4 .swiper-container-1 .swiper-slide {
   box-sizing: border-box;
+  width: 100%;
+  max-height: 7.8125rem;
   padding-top: 0.2188rem;
   background: #ffffff;
 }
