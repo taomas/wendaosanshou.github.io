@@ -47,5 +47,6 @@
   $(document).ready(function() {
     initSwiper1()
     initSwiper2()
+    $('body').css('visibility', 'visible')
   })
 })()

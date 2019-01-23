@@ -8,15 +8,16 @@
   <meta content="yes" name="apple-touch-fullscreen" />
   <meta content="telephone=no,email=no" name="format-detection" />
   <meta content="maximum-dpr=2" name="flexible" />
+  <script src="./flexible/flexible_css.js"></script>
+  <script src="./flexible/flexible.js"></script>
+  <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/base.css">
   <link rel="stylesheet" href="./style/home.css">
   <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
   <title>深圳鹏程牙科</title>
-  <script src="./flexible/flexible_css.js"></script>
-  <script src="./flexible/flexible.js"></script>
 </head>
 
-<body>
+<body style="visibility: hidden;">
   <div class="home">
     <div class="home-top">
       <div class="top-logo-wrap">
@@ -136,13 +137,16 @@
         <div class="swiper-container swiper-container-1 home-content-4-content">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-1">
-              <img src="./assets/home/tu4-t.png" alt="">
+              <img src="./assets/home/tu4-t2.png" alt="">
             </div>
             <div class="swiper-slide slide-2">
-              <img src="./assets/home/tu4-t.png" alt="">
+              <img src="./assets/home/tu4-t1.png" alt="">
             </div>
             <div class="swiper-slide slide-3">
-              <img src="./assets/home/tu4-t.png" alt="">
+              <img src="./assets/home/tu4-t3.png" alt="">
+            </div>
+            <div class="swiper-slide slide-3">
+              <img src="./assets/home/tu4-t4.png" alt="">
             </div>
           </div>
           <div class="swiper-pagination swiper-pagination-1"></div>
@@ -166,14 +170,14 @@
                 <img src="./assets/home/tu6-b.png" alt="">
               </div>
               <div class="swiper-slide slide-2">
-                <img src="./assets/home/tu6-b.png" alt="">
+                <img src="./assets/home/tu6-b-1.png" alt="">
               </div>
               <div class="swiper-slide slide-3">
-                <img src="./assets/home/tu6-b.png" alt="">
+                <img src="./assets/home/tu6-b-2.png" alt="">
               </div>
-              <div class="swiper-slide slide-3">
+              <!--<div class="swiper-slide slide-3">
                 <img src="./assets/home/tu6-b.png" alt="">
-              </div>
+              </div>-->
             </div>
             <ul class="swiper-pagination-2">
             </ul>
@@ -195,6 +199,9 @@
   <script src="./lib/swiper/js/swiper.min.js"></script>
   <script src="./lib/jquery.min.js"></script>
   <script src="./js/home.js"></script>
+  <script type="text/javascript">
+    document.querySelector('body').style.visibility = "visible";
+  </script>
 </body>
 
 </html>
