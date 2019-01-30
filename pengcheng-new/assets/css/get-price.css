@@ -254,6 +254,8 @@
   height: 1.8133rem;
   padding-top: 0.2rem;
   margin-top: 0.2667rem;
+  background: #f4f9ff;
+  border-radius: 4px;
 }
 
 .record-title {
