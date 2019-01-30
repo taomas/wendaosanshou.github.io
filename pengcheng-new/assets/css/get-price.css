@@ -1,0 +1,353 @@
+.page-block-1 {
+  width: 10rem;
+  height: 10.7867rem;
+  background: url('../images/bg-1.jpg');
+  background-size: 100% 100%;
+}
+
+.page-block-2 {
+  width: 10rem;
+  height: 2.48rem;
+  background: url('../images/bg-2.jpg');
+  background-size: 100% 100%;
+}
+
+.page-block-3 {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 23.5867rem;
+  padding: 0 0.64rem;
+  background: url('../images/bg-3.jpg');
+  background-size: 100% 100%;
+}
+
+.block-3-price {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.72rem;
+  height: 1.28rem;
+  margin: 0 auto;
+  font-size: 0.5067rem;
+  color: #323234;
+  padding: 0 0.3733rem;
+  background: url('../images/price-title.jpg');
+  background-size: 100% 100%;
+}
+
+.price-money {
+  font-size: 0.2933rem;
+}
+
+.block-3-title {
+  width: 100%;
+  height: auto;
+  font-size: 0.3467rem;
+  color: #666666;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.block-3-label-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 0.2667rem;
+}
+
+.block-3-label-item {
+  box-sizing: border-box;
+  width: 2.4rem;
+  height: 1.1067rem;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 0.3733rem;
+  padding-top: 0.16rem;
+  color: #2a4c81;
+  margin-right: 0.32rem;
+  border-radius: 0.0533rem;
+  background: #dae8fb;
+}
+
+.block-3-label-item-last {
+  width: 3.1467rem;
+  margin-right: 0;
+}
+
+.block-3-red {
+  color: #f55a5c;
+}
+
+.question-block {
+  width: 100%;
+  height: auto;
+  margin-top: 0.6133rem;
+}
+
+.question-item-title {
+  position: relative;
+  width: 7.6267rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  padding-left: 0.8933rem;
+  font-size: 0.4rem;
+  color: #2a4c81;
+  background: #f4f9ff;
+}
+
+.question-1-title::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.8933rem;
+  height: 0.76rem;
+  background: url('../images/question-title-1.jpg');
+  background-size: 100% 100%;
+}
+
+.question-2-title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.8933rem;
+  height: 0.76rem;
+  background: url('../images/question-title-2.jpg');
+  background-size: 100% 100%;
+}
+
+.question-3-title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.8933rem;
+  height: 0.76rem;
+  background: url('../images/question-title-3.jpg');
+  background-size: 100% 100%;
+}
+
+.question-4-title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.8933rem;
+  height: 0.76rem;
+  background: url('../images/question-title-4.jpg');
+  background-size: 100% 100%;
+}
+
+.question-item-answer {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0.24rem 0 0.24rem 0;
+}
+
+.answer-item-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.2667rem;
+}
+
+.answer-item-wrap:nth-child(1) {
+  margin-top: 0;
+}
+
+.answer-item {
+  width: 4.1333rem;
+  height: 0.8667rem;
+  line-height: 0.8667rem;
+  font-size: 0.4rem;
+  color: #18458d;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  margin-left: 0.2933rem;
+  border-radius: 4px;
+}
+
+.answer-item.active {
+  border: 0;
+  background: url('../images/answer-active-long.jpg');
+  background-size: 100% 100%;
+}
+
+.question-1 .answer-item.active {
+  border: 0;
+  background: url('../images/answer-active.jpg');
+  background-size: 100% 100%;
+}
+
+.question-1 .answer-item {
+  width: 2.6667rem;
+}
+
+.answer-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  width: 8.6667rem;
+  height: 1.0667rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.form-info-last {
+  margin-top: 18px;
+}
+
+.info-label {
+  box-sizing: border-box;
+  width: 2.1333rem;
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+  font-size: 0.4133rem;
+  padding-left: 0.5333rem;
+  text-align: left;
+  color: #2a4c81;
+}
+
+.info-ipt {
+  flex-grow: 1;
+  width: auto;
+  height: 1.0667rem;
+  line-height: 1.0667rem;
+  font-size: 0.4133rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form-btn-confirm {
+  width: 8.6667rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.5467rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0.32rem auto 0;
+  border-radius: 1.2rem;
+  background: #f53e95;
+}
+
+.user-record {
+  box-sizing: border-box;
+  width: 8.6667rem;
+  height: 1.8133rem;
+  padding-top: 0.2rem;
+  margin-top: 0.2667rem;
+}
+
+.record-title {
+  font-size: 0.3733rem;
+  color: #666666;
+  text-align: center;
+}
+
+.record-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.record-item-left {
+  margin-left: 1.4667rem;
+}
+
+.record-item-right {
+  margin-left: 0.8rem;
+}
+
+.page-block-4 {
+  width: 10rem;
+  height: 10.64rem;
+  background: url('../images/bg-4.jpg');
+  background-size: 100% 100%;
+}
+.page-block-5 {
+  position: relative;
+  width: 10rem;
+  height: 9.6133rem;
+  background: url('../images/bg-5.jpg');
+  background-size: 100% 100%;
+}
+
+.block-5-toogle {
+  position: absolute;
+  right: 0.8667rem;
+  bottom: 0.8rem;
+  width: 2.6667rem;
+  height: 1rem;
+}
+.page-block-6 {
+  width: 10rem;
+  height: 11.8rem;
+  background: url('../images/bg-6.jpg');
+  background-size: 100% 100%;
+}
+.page-block-7 {
+  width: 10rem;
+  height: 2.28rem;
+}
+
+.block-7-copyright {
+  font-size: 0.2933rem;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+  color: #5784cc;
+  text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 1.2rem;
+  box-shadow: 0 0 5px #3e3e3e;
+  background: url('../images/footer-menu.jpg');
+  background-size: 100% 100%;
+}
+
+/*.menu-tel,
+.menu-chat {
+  width: 50%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.5867rem;
+  color: #ffffff;
+  text-align: center;
+}*/
+
+.footer-menu a {
+  display: block;
+  width: 50%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.5867rem;
+  color: #ffffff;
+  text-align: center;
+}
