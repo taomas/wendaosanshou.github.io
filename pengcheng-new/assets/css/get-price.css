@@ -323,11 +323,12 @@
   justify-content: flex-start;
   align-items: center;
   position: fixed;
-  left: 0;
+  left: 50%;
   bottom: 0;
   width: 10rem;
   height: 1.2rem;
   box-shadow: 0 0 5px #3e3e3e;
+  transform: translateX(-50%);
   background: url('../images/footer-menu.jpg');
   background-size: 100% 100%;
 }

@@ -20,3 +20,5 @@ https://wendaosanshou.github.io/pengcheng/planting.html
 https://wendaosanshou.github.io/pengcheng/correction-flow.html
 信息流种植：
 https://wendaosanshou.github.io/pengcheng/planting-flow.html
+
+https://wendaosanshou.github.io/pengcheng-new/get-price.html
