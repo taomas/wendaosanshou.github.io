@@ -269,6 +269,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  font-size: 0.3467rem;
+  color: #666666;
 }
 
 .record-item-left {
