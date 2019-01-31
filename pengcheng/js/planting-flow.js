@@ -8,7 +8,7 @@
 
   let timer = ''
   function initScroll() {
-    let scrollDom = $('.tel-list-content')
+    let scrollDom = $('.record-list')
     clearTimeout(timer)
     timer = setInterval(function() {
       autoScroll(scrollDom)
